@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIA triáda a McCumber Cube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            CIA triáda a McCumber Cube
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- CIA Triáda -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">CIA Triáda</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Confidentiality (Důvěrnost)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění přístupu jen oprávněným entitám</li>
+                                <li class="list-item">Implementace pomocí silného šifrování dat</li>
+                                <li class="list-item">Příklad: Šifrování citlivých dokumentů firmy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Integrity (Integrita)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ochrana před neoprávněnou modifikací dat</li>
+                                <li class="list-item">Kontrola pomocí hashovacích mechanismů</li>
+                                <li class="list-item">Příklad: Digitální podpis důležitých souborů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Availability (Dostupnost)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění stálého přístupu k datům</li>
+                                <li class="list-item">Implementace redundantních systémů a záloh</li>
+                                <li class="list-item">Příklad: Záložní datové centrum organizace</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AAA Framework -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">AAA Framework</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Authentication (Autentizace)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ověření identity přistupující entity</li>
+                                <li class="list-item">Využití vícefaktorové autentizace (MFA)</li>
+                                <li class="list-item">Příklad: Přihlášení heslem a tokenem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Authorization (Autorizace)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Přidělení specifických přístupových práv</li>
+                                <li class="list-item">Implementace pomocí přístupových seznamů</li>
+                                <li class="list-item">Příklad: Nastavení oprávnění v systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Accounting (Účtování)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sledování aktivit uživatelů v systému</li>
+                                <li class="list-item">Implementace logovacích mechanismů</li>
+                                <li class="list-item">Příklad: Záznam přístupů do databáze</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stavy dat -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Stavy dat</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Storage (Uložení)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Data v klidu na úložném médiu</li>
+                                <li class="list-item">Vyžaduje šifrování dat v úložišti</li>
+                                <li class="list-item">Příklad: Data na pevném disku</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Transit (Přenos)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Data během síťového přenosu</li>
+                                <li class="list-item">Využití šifrovaných komunikačních protokolů</li>
+                                <li class="list-item">Příklad: Zabezpečený přenos HTTPS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Processing (Zpracování)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Data během aktivního využití systémem</li>
+                                <li class="list-item">Ochrana dat v operační paměti</li>
+                                <li class="list-item">Příklad: Šifrování dat v RAM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- McCumber Cube dimenze -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">McCumber Cube dimenze</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Technologie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Hardwarové a softwarové bezpečnostní prvky</li>
+                                <li class="list-item">Implementace technických bezpečnostních opatření</li>
+                                <li class="list-item">Příklad: Firewally a antivirové systémy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Pravidla</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Formální bezpečnostní politiky organizace</li>
+                                <li class="list-item">Definice standardů a procedur</li>
+                                <li class="list-item">Příklad: Směrnice pro správu hesel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Osoby</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Lidský faktor v bezpečnostním systému</li>
+                                <li class="list-item">Školení a zvyšování bezpečnostního povědomí</li>
+                                <li class="list-item">Příklad: Pravidelná bezpečnostní školení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

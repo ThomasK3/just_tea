@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cíle a základní pojmy kybernetické bezpečnosti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Cíle a základní pojmy kybernetické bezpečnosti
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Cíle KB -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Cíle Kybernetické Bezpečnosti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Důvěrnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění přístupu pouze oprávněným osobám</li>
+                                <li class="list-item">Ochrana dat před neoprávněným čtením</li>
+                                <li class="list-item">Implementace pomocí šifrování a autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Integrita</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ochrana dat před neoprávněnou modifikací</li>
+                                <li class="list-item">Zajištění správnosti a úplnosti dat</li>
+                                <li class="list-item">Využití hashovacích funkcí a podpisů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Dostupnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění nepřetržitého přístupu k systémům</li>
+                                <li class="list-item">Prevence výpadků a útoků DoS</li>
+                                <li class="list-item">Implementace redundance a zálohování</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typologie hrozeb -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Externí hrozby -->
+                <div class="card">
+                    <div class="card-header bg-gray-100">
+                        <h2 class="text-xl font-semibold text-blue-700">Externí hrozby</h2>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="list-item">Útoky pocházející z vnějšího prostředí</li>
+                            <li class="list-item">Využívání zranitelností v systémech organizace</li>
+                            <li class="list-item">Příklad: DDoS útok na server</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Interní hrozby -->
+                <div class="card">
+                    <div class="card-header bg-gray-100">
+                        <h2 class="text-xl font-semibold text-blue-700">Interní hrozby</h2>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="list-item">Rizika od vlastních zaměstnanců organizace</li>
+                            <li class="list-item">Zneužití přidělených přístupových práv</li>
+                            <li class="list-item">Příklad: Únik dat privilegovaným uživatelem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fáze kybernetického útoku -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Fáze kybernetického útoku</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Reconnaissance</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sběr informací o cílovém systému</li>
+                                <li class="list-item">Mapování infrastruktury a zranitelností</li>
+                                <li class="list-item">Využití veřejně dostupných zdrojů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Exploitation</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Využití nalezených bezpečnostních slabin</li>
+                                <li class="list-item">Provedení útoku na zranitelný systém</li>
+                                <li class="list-item">Aplikace exploitů na konkrétní zranitelnosti</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Post-exploitation</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Udržení přístupu do napadeného systému</li>
+                                <li class="list-item">Instalace backdoorů a dalších nástrojů</li>
+                                <li class="list-item">Skrývání stop útočníka v systému</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zero-Day Attack -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Zero-Day Attack</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="list-item">Útok využívající neznámou zranitelnost</li>
+                        <li class="list-item">Není dostupná bezpečnostní záplata</li>
+                        <li class="list-item">Příklad: Exploit nové chyby Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>
