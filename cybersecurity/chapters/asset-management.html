@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa a ochrana aktiv organizace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Správa a ochrana aktiv organizace
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Klasifikace aktiv -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Klasifikace aktiv</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Primární aktiva</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Klíčové procesy a informace organizace</li>
+                                <li class="list-item">Přímá vazba na hlavní činnost</li>
+                                <li class="list-item">Příklad: Zákaznická databáze, zdrojové kódy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Podpůrná aktiva</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění funkce primárních aktiv</li>
+                                <li class="list-item">Infrastrukturní a technologické zázemí</li>
+                                <li class="list-item">Příklad: Servery, síťové prvky</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Klasifikační schéma</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kategorizace podle důležitosti</li>
+                                <li class="list-item">Stanovení úrovně ochrany</li>
+                                <li class="list-item">Příklad: Kritické/důležité/běžné aktivum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Řízení rizik -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Řízení rizik</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Identifikace hrozeb</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Mapování potenciálních nebezpečí</li>
+                                <li class="list-item">Katalogizace známých hrozeb</li>
+                                <li class="list-item">Příklad: Matice hrozeb a zranitelností</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Analýza rizik</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vyhodnocení pravděpodobnosti a dopadu</li>
+                                <li class="list-item">Kvantitativní/kvalitativní hodnocení</li>
+                                <li class="list-item">Příklad: Metodika CRAMM</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Ošetření rizik</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Strategie zmírnění rizik</li>
+                                <li class="list-item">Implementace kontrolních opatření</li>
+                                <li class="list-item">Příklad: Transfer rizika pojištěním</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Point of Failure -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Single Point of Failure</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Identifikace SPOF</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nalezení kritických bodů infrastruktury</li>
+                                <li class="list-item">Analýza závislostí systémů</li>
+                                <li class="list-item">Příklad: Jediný napájecí zdroj</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Eliminace SPOF</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Odstranění kritických závislostí</li>
+                                <li class="list-item">Implementace záložních řešení</li>
+                                <li class="list-item">Příklad: Redundantní napájení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Kontinuita provozu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Plánování reakce na výpadky</li>
+                                <li class="list-item">Testování záložních scénářů</li>
+                                <li class="list-item">Příklad: Disaster recovery plán</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redundance systémů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Redundance systémů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Hardwarová redundance</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zdvojení kritických komponent</li>
+                                <li class="list-item">Aktivní/pasivní zálohy</li>
+                                <li class="list-item">Příklad: RAID pole disků</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Síťová redundance</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Redundantní síťové cesty</li>
+                                <li class="list-item">Záložní připojení k internetu</li>
+                                <li class="list-item">Příklad: Dual-homed konfigurace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Datová redundance</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zálohování kritických dat</li>
+                                <li class="list-item">Geografická replikace</li>
+                                <li class="list-item">Příklad: Off-site backup centrum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

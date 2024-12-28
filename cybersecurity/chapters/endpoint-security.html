@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabezpečení koncových bodů a serverů</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Zabezpečení koncových bodů a serverů
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní zabezpečení systému -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Základní zabezpečení systému</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Aktualizace systému</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Pravidelná instalace bezpečnostních záplat</li>
+                                <li class="list-item">Automatické stahování kritických updatů</li>
+                                <li class="list-item">Příklad: Windows Update, WSUS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Antivirová ochrana</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Aktivní ochrana proti malware</li>
+                                <li class="list-item">Pravidelné skenování systému</li>
+                                <li class="list-item">Příklad: Endpoint Protection Platform</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Řízení přístupu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Správa uživatelských účtů</li>
+                                <li class="list-item">Vynucování silných hesel</li>
+                                <li class="list-item">Příklad: Zásady skupiny Active Directory</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardening systému -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Hardening systému</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Minimalizace služeb</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vypnutí nepotřebných služeb</li>
+                                <li class="list-item">Omezení síťových portů</li>
+                                <li class="list-item">Příklad: Vypnutí NetBIOS, SMBv1</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Konfigurace zabezpečení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Bezpečné výchozí nastavení</li>
+                                <li class="list-item">Odstranění zbytečných aplikací</li>
+                                <li class="list-item">Příklad: AppLocker pravidla</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Šifrování dat</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Šifrování citlivých dat</li>
+                                <li class="list-item">Zabezpečení úložišť</li>
+                                <li class="list-item">Příklad: BitLocker, VeraCrypt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitorování a audit -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Monitorování a audit</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Logování událostí</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sledování bezpečnostních událostí</li>
+                                <li class="list-item">Centrální sběr logů</li>
+                                <li class="list-item">Příklad: Windows Event Log</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Detekce anomálií</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Monitorování systémových změn</li>
+                                <li class="list-item">Detekce podezřelého chování</li>
+                                <li class="list-item">Příklad: EDR systémy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Správa incidentů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Reakce na bezpečnostní události</li>
+                                <li class="list-item">Dokumentace incidentů</li>
+                                <li class="list-item">Příklad: Security incident playbook</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilá ochrana -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Pokročilá ochrana</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Aplikační whitelist</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Povolení pouze známých aplikací</li>
+                                <li class="list-item">Kontrola integrity software</li>
+                                <li class="list-item">Příklad: Software Restriction Policies</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Segmentace sítě</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Oddělení kritických systémů</li>
+                                <li class="list-item">Implementace VLAN</li>
+                                <li class="list-item">Příklad: DMZ pro servery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Zálohovací strategie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Pravidelné zálohování dat</li>
+                                <li class="list-item">Testování obnovy</li>
+                                <li class="list-item">Příklad: 3-2-1 zálohovací pravidlo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serverové zabezpečení -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Serverové zabezpečení</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Virtualizační bezpečnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Izolace virtuálních strojů</li>
+                                <li class="list-item">Zabezpečení hypervizoru</li>
+                                <li class="list-item">Příklad: vSphere Security</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Vysoká dostupnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Clustery serverů</li>
+                                <li class="list-item">Load balancing</li>
+                                <li class="list-item">Příklad: Windows Failover Cluster</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Bezpečné vzdálené přístupy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">VPN pro administraci</li>
+                                <li class="list-item">Vícefaktorová autentizace</li>
+                                <li class="list-item">Příklad: Jump server architektura</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

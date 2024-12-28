@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zajištění fyzické bezpečnosti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Zajištění fyzické bezpečnosti
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Perimetrická ochrana -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Perimetrická ochrana</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Zabezpečení obvodu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Fyzické bariéry proti vstupu</li>
+                                <li class="list-item">Detekce narušení perimetru</li>
+                                <li class="list-item">Příklad: Bezpečnostní plot, infračidla</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Přístupové body</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kontrolované vstupní body</li>
+                                <li class="list-item">Monitorování pohybu osob</li>
+                                <li class="list-item">Příklad: Turnikety s čipovou kontrolou</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Kamerový systém</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nepřetržité monitorování prostor</li>
+                                <li class="list-item">Záznam a archivace záběrů</li>
+                                <li class="list-item">Příklad: CCTV s nočním viděním</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontrola přístupu -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Kontrola přístupu</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Fyzická autentizace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ověřování identity osob</li>
+                                <li class="list-item">Vícefaktorové přístupové systémy</li>
+                                <li class="list-item">Příklad: Biometrická čtečka + PIN</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Návštěvnický režim</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Evidence návštěv</li>
+                                <li class="list-item">Doprovod návštěv</li>
+                                <li class="list-item">Příklad: Visitor management system</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Zónová bezpečnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Odstupňování úrovní zabezpečení</li>
+                                <li class="list-item">Oddělení kritických prostor</li>
+                                <li class="list-item">Příklad: Serverovna jako nejvyšší zóna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Environmentální ochrana -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Environmentální ochrana</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Požární ochrana</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Detekce a hašení požáru</li>
+                                <li class="list-item">Požární poplachový systém</li>
+                                <li class="list-item">Příklad: FM-200 hasicí systém</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Klimatizace a chlazení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Regulace teploty a vlhkosti</li>
+                                <li class="list-item">Redundantní klimatizační jednotky</li>
+                                <li class="list-item">Příklad: Precision cooling system</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Napájení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Záložní napájecí systémy</li>
+                                <li class="list-item">UPS a diesel generátory</li>
+                                <li class="list-item">Příklad: Dual-power feed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bezpečnost zařízení -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Bezpečnost zařízení</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Fyzické zabezpečení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Uzamykání hardware</li>
+                                <li class="list-item">Ochrana proti krádeži</li>
+                                <li class="list-item">Příklad: Kensington lock</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Likvidace dat</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Bezpečná skartace dokumentů</li>
+                                <li class="list-item">Destrukce datových nosičů</li>
+                                <li class="list-item">Příklad: Degausser pro HDD</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Asset tracking</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sledování pohybu zařízení</li>
+                                <li class="list-item">Inventarizace majetku</li>
+                                <li class="list-item">Příklad: RFID značení vybavení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Havarijní plánování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Havarijní plánování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Evakuační plán</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Únikové cesty</li>
+                                <li class="list-item">Nouzové postupy</li>
+                                <li class="list-item">Příklad: Požární evakuační plán</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Krizové řízení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Reakce na fyzické incidenty</li>
+                                <li class="list-item">Koordinace s IZS</li>
+                                <li class="list-item">Příklad: Povodňový plán</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Disaster Recovery</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Obnova po fyzické katastrofě</li>
+                                <li class="list-item">Záložní lokality</li>
+                                <li class="list-item">Příklad: Hot-site datacenter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typy firewallů a jejich funkce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Typy firewallů a jejich funkce
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Firewally podle vrstev OSI -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Firewally podle vrstev OSI</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Network Layer Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Filtrace na základě IP adres</li>
+                                <li class="list-item">Kontrola síťové vrstvy protokolu</li>
+                                <li class="list-item">Příklad: Filtrování podle zdrojové IP</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Transport Layer Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kontrola TCP/UDP spojení</li>
+                                <li class="list-item">Stavová inspekce paketů</li>
+                                <li class="list-item">Příklad: Filtrace podle portů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Application Layer Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Analýza aplikačních protokolů</li>
+                                <li class="list-item">Hluboká inspekce paketů</li>
+                                <li class="list-item">Příklad: Filtrace HTTP požadavků</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specializované firewally -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Specializované firewally</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Context Aware Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Rozhodování podle kontextu komunikace</li>
+                                <li class="list-item">Adaptivní změna pravidel</li>
+                                <li class="list-item">Příklad: Analýza chování uživatele</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Host-based Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ochrana konkrétního zařízení</li>
+                                <li class="list-item">Lokální filtrace provozu</li>
+                                <li class="list-item">Příklad: Windows Defender Firewall</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">NAT Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Překládání síťových adres</li>
+                                <li class="list-item">Skrývání vnitřní struktury sítě</li>
+                                <li class="list-item">Příklad: Překlad privátních adres</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proxy servery -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Proxy servery</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Forward Proxy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zprostředkování přístupu do internetu</li>
+                                <li class="list-item">Cachování obsahu pro klienty</li>
+                                <li class="list-item">Příklad: Firemní proxy server</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Reverse Proxy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ochrana vnitřních webových serverů</li>
+                                <li class="list-item">Rozložení zátěže provozu</li>
+                                <li class="list-item">Příklad: Nginx jako reverse proxy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Application Proxy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Specializované proxy pro aplikace</li>
+                                <li class="list-item">Hluboká analýza protokolů</li>
+                                <li class="list-item">Příklad: SMTP proxy pro email</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé funkce -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Pokročilé funkce</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Deep Packet Inspection</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Detailní analýza obsahu paketů</li>
+                                <li class="list-item">Identifikace škodlivého obsahu</li>
+                                <li class="list-item">Příklad: Antivirová kontrola provozu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Virtual Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Virtualizované bezpečnostní funkce</li>
+                                <li class="list-item">Oddělení síťových segmentů</li>
+                                <li class="list-item">Příklad: VMware NSX firewall</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Next-Gen Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kombinace více bezpečnostních funkcí</li>
+                                <li class="list-item">Inteligentní analýza hrozeb</li>
+                                <li class="list-item">Příklad: Palo Alto Networks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

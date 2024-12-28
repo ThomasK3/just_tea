@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šifrování a kryptografické metody</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Šifrování a kryptografické metody
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní typy šifrování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Základní typy šifrování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Symetrická kryptografie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Stejný klíč pro šifrování/dešifrování</li>
+                                <li class="list-item">Rychlé zpracování velkých objemů dat</li>
+                                <li class="list-item">Příklad: AES-256 pro šifrování disku</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Asymetrická kryptografie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Pár veřejného a soukromého klíče</li>
+                                <li class="list-item">Bezpečnější distribuce klíčů</li>
+                                <li class="list-item">Příklad: RSA pro digitální podpisy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Hybridní šifrování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kombinace symetrického a asymetrického</li>
+                                <li class="list-item">Využívá výhody obou přístupů</li>
+                                <li class="list-item">Příklad: HTTPS komunikace</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hashování a podpisy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Hashování a podpisy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Hashovací funkce</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Jednosměrná transformace vstupních dat</li>
+                                <li class="list-item">Vytváří unikátní otisk dat</li>
+                                <li class="list-item">Příklad: SHA-256 pro kontrolu integrity</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Digitální podpis</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kryptografické ověření původu dat</li>
+                                <li class="list-item">Kombinace hashování a asymetrického šifrování</li>
+                                <li class="list-item">Příklad: Podepisování dokumentů PDF</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Message Authentication Code</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ověření integrity a autenticity</li>
+                                <li class="list-item">Kombinace hashe a sdíleného klíče</li>
+                                <li class="list-item">Příklad: HMAC pro API autentizaci</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastruktura veřejných klíčů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Infrastruktura veřejných klíčů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Certifikační autorita</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vydávání digitálních certifikátů</li>
+                                <li class="list-item">Ověření identity žadatelů</li>
+                                <li class="list-item">Příklad: Let's Encrypt pro HTTPS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Digitální certifikáty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vazba veřejného klíče na identitu</li>
+                                <li class="list-item">Obsahuje metadata a podpis CA</li>
+                                <li class="list-item">Příklad: X.509 certifikát serveru</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Revokace certifikátů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zneplatnění kompromitovaných certifikátů</li>
+                                <li class="list-item">Správa CRL a OCSP</li>
+                                <li class="list-item">Příklad: Blacklist neplatných certifikátů</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bezpečné připojení -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Bezpečné připojení</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">VPN (Virtual Private Network)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Šifrovaný tunel přes veřejnou síť</li>
+                                <li class="list-item">Zajištění důvěrnosti přenosu dat</li>
+                                <li class="list-item">Příklad: OpenVPN pro vzdálený přístup</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SSL/TLS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Protokol pro zabezpečení komunikace</li>
+                                <li class="list-item">Handshake pro ustanovení klíčů</li>
+                                <li class="list-item">Příklad: HTTPS zabezpečení webu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">IPsec</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zabezpečení na síťové vrstvě</li>
+                                <li class="list-item">Šifrování IP paketů</li>
+                                <li class="list-item">Příklad: Site-to-site VPN tunel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Praktická implementace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Praktická implementace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Správa klíčů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Bezpečné generování a úschova</li>
+                                <li class="list-item">Pravidelná rotace klíčů</li>
+                                <li class="list-item">Příklad: HSM pro kritické klíče</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Kryptografické protokoly</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Standardizované bezpečné postupy</li>
+                                <li class="list-item">Ověřené implementace knihoven</li>
+                                <li class="list-item">Příklad: TLS 1.3 konfigurace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Best practices</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Aktuální kryptografické standardy</li>
+                                <li class="list-item">Pravidelný bezpečnostní audit</li>
+                                <li class="list-item">Příklad: Použití Forward Secrecy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

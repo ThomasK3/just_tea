@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentizační systémy a metody</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Autentizační systémy a metody
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní autentizační metody -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Základní autentizační metody</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Password-based Authentication</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ověření pomocí uživatelského hesla</li>
+                                <li class="list-item">Vyžaduje bezpečné ukládání hesel</li>
+                                <li class="list-item">Příklad: Hashování hesla pomocí bcrypt</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Biometric Authentication</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Ověření pomocí biometrických údajů</li>
+                                <li class="list-item">Využití jedinečných fyzických charakteristik</li>
+                                <li class="list-item">Příklad: Otisk prstu, sken obličeje</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Token-based Authentication</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Využití fyzického nebo softwarového tokenu</li>
+                                <li class="list-item">Generování jednorázových kódů</li>
+                                <li class="list-item">Příklad: RSA SecurID token</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vícefaktorová autentizace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Vícefaktorová autentizace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">2FA (Two-Factor Authentication)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kombinace dvou různých metod</li>
+                                <li class="list-item">Zvýšení bezpečnosti přihlášení</li>
+                                <li class="list-item">Příklad: Heslo + SMS kód</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">MFA (Multi-Factor Authentication)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Více než dva faktory ověření</li>
+                                <li class="list-item">Kombinace různých autentizačních metod</li>
+                                <li class="list-item">Příklad: Heslo + token + biometrie</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Bezpečnostní faktory</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Něco co znám (heslo)</li>
+                                <li class="list-item">Něco co mám (token)</li>
+                                <li class="list-item">Něco čím jsem (biometrie)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé autentizační systémy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Pokročilé autentizační systémy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Certificate-based Authentication</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Využití digitálních certifikátů</li>
+                                <li class="list-item">Asymetrická kryptografie pro ověření</li>
+                                <li class="list-item">Příklad: Smart card autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Single Sign-On (SSO)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Jednotné přihlášení k více službám</li>
+                                <li class="list-item">Centralizovaná správa identit</li>
+                                <li class="list-item">Příklad: Azure AD SSO</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">OAuth/OpenID Connect</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Delegování přístupu třetím stranám</li>
+                                <li class="list-item">Standardizovaný autentizační protokol</li>
+                                <li class="list-item">Příklad: Přihlášení přes Google</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Autentizační protokoly -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Autentizační protokoly</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">LDAP (Lightweight Directory)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Protokol pro přístup k adresářům</li>
+                                <li class="list-item">Hierarchická struktura dat</li>
+                                <li class="list-item">Příklad: Active Directory autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">CHAP (Challenge-Handshake)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Výzva-odpověď autentizační protokol</li>
+                                <li class="list-item">Ochrana proti replay útokům</li>
+                                <li class="list-item">Příklad: PPP autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">EAP (Extensible Authentication)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Framework pro autentizační metody</li>
+                                <li class="list-item">Flexibilní podpora různých mechanismů</li>
+                                <li class="list-item">Příklad: WPA2-Enterprise WiFi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bezpečnostní praktiky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Bezpečnostní praktiky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Správa hesel</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Minimální délka a komplexnost</li>
+                                <li class="list-item">Pravidelná změna hesel</li>
+                                <li class="list-item">Příklad: Zákaz opakování hesel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Salt a Pepper</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Přidání náhodných dat k heslu</li>
+                                <li class="list-item">Ochrana proti rainbow tables</li>
+                                <li class="list-item">Příklad: Unikátní salt pro každé heslo</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Ochrana proti útokům</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Omezení počtu pokusů</li>
+                                <li class="list-item">Detekce anomálií</li>
+                                <li class="list-item">Příklad: Časové prodlevy po neúspěchu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

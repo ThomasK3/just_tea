@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síťové útoky a ochrana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Síťové útoky a ochrana
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Odposlouchávání komunikace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Odposlouchávání komunikace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Man-in-The-Middle</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zachycení komunikace mezi dvěma stranami</li>
+                                <li class="list-item">Aktivní přesměrování síťového provozu</li>
+                                <li class="list-item">Příklad: Falešný WiFi přístupový bod</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Man-in-The-Mobile</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zachycení mobilní komunikace zařízení</li>
+                                <li class="list-item">Kompromitace mobilních transakcí</li>
+                                <li class="list-item">Příklad: Zachycení SMS autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Sniffing</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Pasivní odposlech síťové komunikace</li>
+                                <li class="list-item">Analýza zachyceného síťového provozu</li>
+                                <li class="list-item">Příklad: Zachytávání nešifrovaných hesel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Odepření služby -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Odepření služby</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">DOS (Denial of Service)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Útok zahlcením služby požadavky</li>
+                                <li class="list-item">Vyčerpání systémových zdrojů serveru</li>
+                                <li class="list-item">Příklad: Zahlcení webového serveru</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">DDOS (Distributed DOS)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Distribuovaný útok z více zdrojů</li>
+                                <li class="list-item">Koordinované zahlcení cílového systému</li>
+                                <li class="list-item">Příklad: Botnet útok na službu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Rogue AP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nelegitimní bezdrátový přístupový bod</li>
+                                <li class="list-item">Zachytávání WiFi komunikace uživatelů</li>
+                                <li class="list-item">Příklad: Evil Twin útok</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Průzkumné techniky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Průzkumné techniky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Port Scanning</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Mapování otevřených portů systému</li>
+                                <li class="list-item">Identifikace běžících síťových služeb</li>
+                                <li class="list-item">Příklad: Nmap skenování serverů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SEO Poisoning</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Manipulace s výsledky vyhledávání</li>
+                                <li class="list-item">Přesměrování na škodlivé stránky</li>
+                                <li class="list-item">Příklad: Falešné optimalizované stránky</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Browser Hijacker</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Modifikace nastavení prohlížeče</li>
+                                <li class="list-item">Přesměrování webového provozu</li>
+                                <li class="list-item">Příklad: Změna výchozí stránky</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podvržení identity -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Podvržení identity</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Spoofing</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Falšování zdrojové identity</li>
+                                <li class="list-item">Podvržení síťových informací</li>
+                                <li class="list-item">Příklad: IP/MAC address spoofing</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Grayware</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Software na hranici legitimity</li>
+                                <li class="list-item">Potenciálně nežádoucí programy</li>
+                                <li class="list-item">Příklad: Sledovací cookies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ochranná opatření -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Ochranná opatření</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Síťová ochrana</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Implementace firewallů a IPS/IDS</li>
+                                <li class="list-item">Segmentace sítě do VLAN</li>
+                                <li class="list-item">Příklad: Oddělení kritické infrastruktury</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Monitorování provozu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Analýza síťových toků</li>
+                                <li class="list-item">Detekce anomálií v provozu</li>
+                                <li class="list-item">Příklad: NetFlow monitoring</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Zabezpečení koncových bodů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Aktualizace systémů a aplikací</li>
+                                <li class="list-item">Implementace antimalware řešení</li>
+                                <li class="list-item">Příklad: Endpoint Protection Platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

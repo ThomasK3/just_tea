@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management bezpečnostních incidentů</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Management bezpečnostních incidentů
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Detekce a analýza -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Detekce a analýza</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SIEM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Centralizovaná správa bezpečnostních událostí</li>
+                                <li class="list-item">Korelace událostí v reálném čase</li>
+                                <li class="list-item">Příklad: Splunk pro analýzu logů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">DLP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Prevence úniku citlivých dat</li>
+                                <li class="list-item">Monitorování datových toků</li>
+                                <li class="list-item">Příklad: Blokování exportu citlivých souborů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Incident Detection</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Automatická detekce anomálií</li>
+                                <li class="list-item">Včasné varování před incidenty</li>
+                                <li class="list-item">Příklad: Behaviorální analýza provozu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reakce na incident -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Reakce na incident</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Security Playbook</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Standardizované postupy řešení incidentů</li>
+                                <li class="list-item">Definované role a odpovědnosti</li>
+                                <li class="list-item">Příklad: Postup při ransomware útoku</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Impact Reduction</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Minimalizace dopadu incidentu</li>
+                                <li class="list-item">Izolace zasažených systémů</li>
+                                <li class="list-item">Příklad: Network segmentation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Incident Response Team</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Specializovaný tým pro řešení</li>
+                                <li class="list-item">Koordinace reakce na incident</li>
+                                <li class="list-item">Příklad: CSIRT tým organizace</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Obnova systémů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Obnova systémů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Disaster Recovery</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Plán obnovy po incidentu</li>
+                                <li class="list-item">Definované RTO a RPO</li>
+                                <li class="list-item">Příklad: Obnova ze záloh</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Business Continuity</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zajištění kontinuity provozu</li>
+                                <li class="list-item">Aktivace záložních systémů</li>
+                                <li class="list-item">Příklad: Failover do záložní lokality</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Post-Incident Analysis</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vyhodnocení příčin incidentu</li>
+                                <li class="list-item">Implementace preventivních opatření</li>
+                                <li class="list-item">Příklad: Root cause analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dokumentace a reporting -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Dokumentace a reporting</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Incident Documentation</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Detailní záznam průběhu incidentu</li>
+                                <li class="list-item">Evidence provedených opatření</li>
+                                <li class="list-item">Příklad: Incident response log</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Forensic Analysis</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sběr digitálních důkazů</li>
+                                <li class="list-item">Analýza kompromitovaných systémů</li>
+                                <li class="list-item">Příklad: Memory dump analýza</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Compliance Reporting</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Hlášení incidentů regulátorům</li>
+                                <li class="list-item">Dokumentace pro audit</li>
+                                <li class="list-item">Příklad: GDPR incident reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prevence a zlepšování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Prevence a zlepšování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Lessons Learned</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Poučení z proběhlých incidentů</li>
+                                <li class="list-item">Aktualizace bezpečnostních postupů</li>
+                                <li class="list-item">Příklad: Update security baseline</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Security Awareness</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Školení zaměstnanců</li>
+                                <li class="list-item">Zvyšování bezpečnostního povědomí</li>
+                                <li class="list-item">Příklad: Phishing awareness training</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Continuous Improvement</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Pravidelná revize postupů</li>
+                                <li class="list-item">Testování incident response</li>
+                                <li class="list-item">Příklad: Table-top cvičení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

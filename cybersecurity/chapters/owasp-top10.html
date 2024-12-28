@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWASP Top 10 zranitelnosti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            OWASP Top 10 zranitelnosti
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Selhání řízení přístupu -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Selhání řízení přístupu</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Broken Access Control</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nedostatečné ověření přístupových práv</li>
+                                <li class="list-item">Možnost horizontální/vertikální eskalace práv</li>
+                                <li class="list-item">Příklad: Přístup k cizím datům</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Identification/Authentication Failures</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Chyby v procesu ověřování identity</li>
+                                <li class="list-item">Slabé mechanismy správy relací</li>
+                                <li class="list-item">Příklad: Slabá pravidla hesel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Server-Side Request Forgery</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Zneužití serverových požadavků aplikace</li>
+                                <li class="list-item">Přístup k interním systémům</li>
+                                <li class="list-item">Příklad: Útok na localhost serveru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kryptografické chyby -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Kryptografické chyby</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Cryptographic Failures</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Slabé nebo nesprávné šifrování</li>
+                                <li class="list-item">Použití zastaralých kryptografických metod</li>
+                                <li class="list-item">Příklad: Přenos hesel v plaintextu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Software/Data Integrity Failures</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nedostatečná ochrana integrity dat</li>
+                                <li class="list-item">Chybějící verifikace aktualizací</li>
+                                <li class="list-item">Příklad: Nechráněné CI/CD pipelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Injekční útoky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Injekční útoky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SQL Injection</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vložení škodlivého SQL kódu</li>
+                                <li class="list-item">Manipulace s databázovými dotazy</li>
+                                <li class="list-item">Příklad: Extrakce databázových dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Command Injection</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Spuštění systémových příkazů</li>
+                                <li class="list-item">Zneužití nedostatečné validace vstupu</li>
+                                <li class="list-item">Příklad: Vzdálené spuštění příkazů</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konfigurační chyby -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Konfigurační chyby</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Security Misconfiguration</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nevhodné bezpečnostní nastavení systémů</li>
+                                <li class="list-item">Výchozí nebezpečné konfigurace</li>
+                                <li class="list-item">Příklad: Nezměněná admin hesla</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Vulnerable Components</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Používání zastaralých komponent</li>
+                                <li class="list-item">Známé zranitelnosti v knihovnách</li>
+                                <li class="list-item">Příklad: Neaktualizované frameworky</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitorování a design -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Monitorování a design</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Insecure Design</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Chyby v návrhu bezpečnostní architektury</li>
+                                <li class="list-item">Nedostatečné modelování hrozeb</li>
+                                <li class="list-item">Příklad: Chybějící bezpečnostní kontroly</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Logging/Monitoring Failures</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nedostatečné logování událostí</li>
+                                <li class="list-item">Chybějící detekce útoků</li>
+                                <li class="list-item">Příklad: Nezaznamenané pokusy průniku</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>

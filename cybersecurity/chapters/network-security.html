@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabezpečení síťové infrastruktury</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-blue-200">/</span>
+                <a href="../index.html" class="text-lg">Kybernetická bezpečnost</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-blue-800 mb-8 text-center">
+            Zabezpečení síťové infrastruktury
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Síťové monitorovací systémy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Síťové monitorovací systémy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">NetFlow</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Analýza síťových toků dat</li>
+                                <li class="list-item">Detekce anomálií v provozu</li>
+                                <li class="list-item">Příklad: Analýza pomocí nfdump</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">IDS (Intrusion Detection)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Detekce podezřelé síťové aktivity</li>
+                                <li class="list-item">Pasivní monitorování provozu</li>
+                                <li class="list-item">Příklad: Snort v IDS módu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">IPS (Intrusion Prevention)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Aktivní blokování škodlivého provozu</li>
+                                <li class="list-item">Automatická reakce na hrozby</li>
+                                <li class="list-item">Příklad: Cisco FirePOWER IPS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Behavior-Based Security -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Behavior-Based Security</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Network Behavior Analysis</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Učení normálního síťového chování</li>
+                                <li class="list-item">Identifikace odchylek od normy</li>
+                                <li class="list-item">Příklad: Detekce DDoS útoku</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">User Behavior Analytics</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Sledování chování uživatelů</li>
+                                <li class="list-item">Detekce kompromitovaných účtů</li>
+                                <li class="list-item">Příklad: UEBA systémy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Anomaly Detection</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Strojové učení pro detekci</li>
+                                <li class="list-item">Adaptivní bezpečnostní pravidla</li>
+                                <li class="list-item">Příklad: AI-based threat detection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síťová segmentace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Síťová segmentace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">VLAN implementace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Logické oddělení sítí</li>
+                                <li class="list-item">Omezení broadcast domén</li>
+                                <li class="list-item">Příklad: Oddělení IoT zařízení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Network Access Control</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Řízení přístupu k síti</li>
+                                <li class="list-item">Karanténa nevyhovujících zařízení</li>
+                                <li class="list-item">Příklad: 802.1X autentizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Microsegmentation</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Granulární síťové politiky</li>
+                                <li class="list-item">Zero-trust architektura</li>
+                                <li class="list-item">Příklad: VMware NSX segmentace</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ochrana perimetru -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Ochrana perimetru</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Redundantní firewally</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Vysoká dostupnost firewallu</li>
+                                <li class="list-item">Aktivní-aktivní clustering</li>
+                                <li class="list-item">Příklad: Palo Alto HA</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">DMZ architektura</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Oddělení veřejných služeb</li>
+                                <li class="list-item">Více úrovní zabezpečení</li>
+                                <li class="list-item">Příklad: Webový server v DMZ</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">DDoS ochrana</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Mitigace volumetrických útoků</li>
+                                <li class="list-item">Ochrana aplikační vrstvy</li>
+                                <li class="list-item">Příklad: Cloudflare DDoS protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé techniky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-blue-700">Pokročilé techniky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SSL/TLS inspekce</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Kontrola šifrovaného provozu</li>
+                                <li class="list-item">Man-in-the-middle proxy</li>
+                                <li class="list-item">Příklad: SSL interception proxy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">SDN Security</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Programovatelné síťové zabezpečení</li>
+                                <li class="list-item">Centralizovaná správa politik</li>
+                                <li class="list-item">Příklad: Cisco ACI security</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-blue-600 mb-3">Zero Trust Network</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item">Nedůvěřuj nikomu architektura</li>
+                                <li class="list-item">Verifikace každého přístupu</li>
+                                <li class="list-item">Příklad: Google BeyondCorp model</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+        </div>
+    </footer>
+</body>
+</html>
