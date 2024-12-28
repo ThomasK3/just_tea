@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meziprocesová komunikace (IPC)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Meziprocesová komunikace (IPC)
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Účel komunikace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Účel komunikace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Multiprogramování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Rozdělení úlohy na samostatné části</li>
+                                <li class="list-item-OS">Využívá výkon více procesorových jader</li>
+                                <li class="list-item-OS">Příklad: Paralelní zpracování webového serveru</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Clustery</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Výpočty na oddělených počítačích v síti</li>
+                                <li class="list-item-OS">Vyžaduje synchronizaci a výměnu dat</li>
+                                <li class="list-item-OS">Příklad: Distribuované výpočetní systémy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Základní mechanismy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Základní mechanismy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Zasílání zpráv</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Přenos dat mezi procesy</li>
+                                <li class="list-item-OS">Implementace v jádře nebo sdílené paměti</li>
+                                <li class="list-item-OS">Použití pro komunikaci mezi počítači</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Sdílená paměť</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Nejflexibilnější způsob komunikace procesů</li>
+                                <li class="list-item-OS">Využívá mapování paměťových stránek</li>
+                                <li class="list-item-OS">Vyžaduje řešení synchronizace přístupu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Synchronizační prostředky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Synchronizační prostředky</h2>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-medium text-green-600 mb-3">Signály</h3>
+                    <ul class="space-y-2">
+                        <li class="list-item-OS">Asynchronní oznámení události procesu</li>
+                        <li class="list-item-OS">Implementováno v jádře systému</li>
+                        <li class="list-item-OS">Zpracování pomocí handleru signálu</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Unixové prostředky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Unixové prostředky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Roura (pipe)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Jednosměrný kanál mezi procesy</li>
+                                <li class="list-item-OS">Propojení přes deskriptory souborů</li>
+                                <li class="list-item-OS">Využití v příkazovém řádku</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Pojmenovaná roura</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Komunikace nepříbuzných procesů</li>
+                                <li class="list-item-OS">Přístup přes speciální soubor</li>
+                                <li class="list-item-OS">Persistence i po ukončení procesů</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síťová komunikace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Síťová komunikace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">IPC Socket</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Obdoba síťové komunikace lokálně</li>
+                                <li class="list-item-OS">Implementace v paměti RAM</li>
+                                <li class="list-item-OS">Podpora více připojených klientů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Loopback</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Komunikace přes localhost (127.0.0.1)</li>
+                                <li class="list-item-OS">Data neopouštějí počítač</li>
+                                <li class="list-item-OS">Využití pro lokální serverové služby</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souběh a uváznutí v operačních systémech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Souběh a uváznutí v operačních systémech
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Souběh -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Souběh (Race Condition)</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="list-item-OS">Současný přístup více procesů ke sdíleným datům</li>
+                        <li class="list-item-OS">Může vést k nekonzistenci dat a chybám</li>
+                        <li class="list-item-OS">Příklad: Dva procesy zapisující do jednoho souboru</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kritická sekce -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Kritická sekce</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="list-item-OS">Část kódu přistupující ke sdíleným prostředkům</li>
+                        <li class="list-item-OS">Může v ní být maximálně jeden proces</li>
+                        <li class="list-item-OS">Musí být implementována jako nedělitelný celek</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Způsoby řešení souběhu -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Způsoby řešení souběhu</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Atomická operace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Operace provedená jako jeden nedělitelný celek</li>
+                                <li class="list-item-OS">Nelze ji během provádění přerušit</li>
+                                <li class="list-item-OS">Typicky realizována jednou strojovou instrukcí</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">TSL instrukce</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Test and Set Lock - atomická instrukce</li>
+                                <li class="list-item-OS">Testuje a nastavuje zámek v jedné operaci</li>
+                                <li class="list-item-OS">Používá se pro implementaci vzájemného vyloučení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Semafory</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Synchronizační primitiva pro řízení přístupu</li>
+                                <li class="list-item-OS">Obsahují čítač dostupných prostředků</li>
+                                <li class="list-item-OS">Implementují operace wait(P) a signal(V)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uváznutí -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Uváznutí (Deadlock)</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="list-item-OS">Vzájemné čekání procesů na uvolnění prostředků</li>
+                        <li class="list-item-OS">Procesy nemohou pokračovat v činnosti</li>
+                        <li class="list-item-OS">Příklad: Dva procesy čekající na tiskárnu a disk</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Podmínky uváznutí -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Podmínky uváznutí</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li class="list-item-OS">Vzájemné vyloučení prostředků</li>
+                        <li class="list-item-OS">Držení prostředku a čekání na další</li>
+                        <li class="list-item-OS">Nemožnost násilného odebrání prostředku</li>
+                        <li class="list-item-OS">Cyklické čekání procesů</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Strategie řešení uváznutí -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Strategie řešení uváznutí</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Prevence</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Znemožnění vzniku některé z podmínek uváznutí</li>
+                                <li class="list-item-OS">Například pomocí číslování prostředků</li>
+                                <li class="list-item-OS">Využití v běžných operačních systémech</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Vyhýbání</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Bankéřův algoritmus pro bezpečné stavy</li>
+                                <li class="list-item-OS">Procesy deklarují maximální požadavky</li>
+                                <li class="list-item-OS">Systém garantuje dostupnost prostředků</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Detekce a zotavení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Průběžné sledování grafu přidělených prostředků</li>
+                                <li class="list-item-OS">Detekce cyklů v grafu závislostí</li>
+                                <li class="list-item-OS">Řešení pomocí ukončení některého procesu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

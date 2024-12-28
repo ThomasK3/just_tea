@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start počítače a bootovací proces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Start počítače a bootovací proces
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní fáze startu -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Základní fáze startu</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Reset a inicializace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Aktivace signálu reset pro všechny obvody</li>
+                                <li class="list-item-OS">Uvedení hardwaru do výchozího stavu</li>
+                                <li class="list-item-OS">Zahájení činnosti v 16bitovém režimu CPU</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">BIOS/UEFI</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Základní programové vybavení na základní desce</li>
+                                <li class="list-item-OS">Poskytuje služby pro práci s hardwarem</li>
+                                <li class="list-item-OS">Zodpovídá za počáteční inicializaci systému</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootovací proces -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Bootovací proces</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">POST test</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Power On Self Test kontrola hardwaru</li>
+                                <li class="list-item-OS">Detekce připojených zařízení a chyb</li>
+                                <li class="list-item-OS">Zobrazení základních informací o systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Boot sektor</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">První sektor bootovacího zařízení (512B)</li>
+                                <li class="list-item-OS">Obsahuje kód pro zavedení operačního systému</li>
+                                <li class="list-item-OS">Na disku součást MBR nebo GPT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typy bootování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Typy bootování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Start z disku</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Načtení MBR/GPT z prvního sektoru</li>
+                                <li class="list-item-OS">Výběr aktivního oddílu pro boot</li>
+                                <li class="list-item-OS">Spuštění bootloaderu operačního systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Start z jiných médií</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Boot z CD/DVD pomocí ISO9660</li>
+                                <li class="list-item-OS">Boot z USB pomocí USB Mass Storage</li>
+                                <li class="list-item-OS">Síťový boot přes PXE protokol</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moderní technologie -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Moderní technologie</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Secure Boot</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Ověření digitálního podpisu bootloaderu</li>
+                                <li class="list-item-OS">Ochrana proti neautorizovanému kódu</li>
+                                <li class="list-item-OS">Součást UEFI specifikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">UEFI</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Nástupce klasického BIOSu</li>
+                                <li class="list-item-OS">Podporuje GPT a větší disky</li>
+                                <li class="list-item-OS">Nabízí pokročilé bootovací možnosti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardwarové prostředky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Hardwarové prostředky
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Komunikace s hardware -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Komunikace s hardware</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">I/O zařízení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Základní rozhraní mezi OS a hardware</li>
+                                <li class="list-item-OS">Využívá ovladače v jádře OS</li>
+                                <li class="list-item-OS">Zajišťuje vstup/výstup dat přes řadiče</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Systém přerušení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Mechanismus pro získání pozornosti CPU</li>
+                                <li class="list-item-OS">Pracuje asynchronně k hlavnímu zpracování</li>
+                                <li class="list-item-OS">Spravován pomocí rutin obsluhy přerušení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware registry -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Hardware registry</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Izolované registry</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Klasická metoda I/O komunikace</li>
+                                <li class="list-item-OS">Používá IN/OUT instrukce CPU</li>
+                                <li class="list-item-OS">Oddělený adresní prostor od paměti</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Paměťově mapované registry</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Registry se jeví jako paměťové adresy</li>
+                                <li class="list-item-OS">Přístupné přes standardní paměťové instrukce</li>
+                                <li class="list-item-OS">Rychlejší ale dražší implementace</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Řadiče zařízení -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Řadiče zařízení</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Funkce ovladače</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Implementuje obsluhu přerušení</li>
+                                <li class="list-item-OS">Poskytuje API pro komunikaci s jádrem</li>
+                                <li class="list-item-OS">Běží v privilegovaném režimu jádra</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Typy řadičů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Vstupní řadiče pro sběr dat</li>
+                                <li class="list-item-OS">Výstupní řadiče pro vysílání dat</li>
+                                <li class="list-item-OS">Kombinované řadiče pro obousměrnou komunikaci</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privilegovaný režim -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Privilegovaný režim</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Úrovně ochrany</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Ring 0 pro operace jádra</li>
+                                <li class="list-item-OS">Ring 3 pro uživatelské aplikace</li>
+                                <li class="list-item-OS">Řídí přístup ke kritickým instrukcím</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Systémová volání</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Rozhraní pro privilegované operace</li>
+                                <li class="list-item-OS">Využívá softwarová přerušení</li>
+                                <li class="list-item-OS">Ověřuje oprávnění operací</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Časovací systém -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Časovací systém</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Hardwarový časovač</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Generuje periodická přerušení</li>
+                                <li class="list-item-OS">Řídí plánování systému</li>
+                                <li class="list-item-OS">Podporuje zpožděné vykonávání operací</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Typy časovačů</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">PIT (Programovatelný intervalový časovač)</li>
+                                <li class="list-item-OS">HPET (Vysoce přesný časovač událostí)</li>
+                                <li class="list-item-OS">TSC (Čítač časových značek)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

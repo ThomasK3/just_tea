@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesy v operačních systémech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Procesy v operačních systémech
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní pojmy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Základní pojmy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Algoritmus</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Systematický postup pro řešení problému</li>
+                                <li class="list-item-OS">Musí být konečný a determinovaný</li>
+                                <li class="list-item-OS">Zapisuje se slovně nebo diagramem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Program</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Zápis algoritmu v programovacím jazyce</li>
+                                <li class="list-item-OS">Překládá se do strojového kódu</li>
+                                <li class="list-item-OS">Uložen jako spustitelný soubor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Proces</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Spuštěný program s vlastními daty</li>
+                                <li class="list-item-OS">Umístěn v operační paměti počítače</li>
+                                <li class="list-item-OS">Řízen operačním systémem přes PCB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Správa procesů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Správa procesů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">PCB (Process Control Block)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Datová struktura popisující proces</li>
+                                <li class="list-item-OS">Obsahuje ID, prioritu, stav procesu</li>
+                                <li class="list-item-OS">Spravován jádrem operačního systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Multitasking</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Střídání procesů na procesoru</li>
+                                <li class="list-item-OS">Umožňuje zdánlivě paralelní běh</li>
+                                <li class="list-item-OS">Zajišťován plánovačem procesů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Změna kontextu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Přepnutí mezi běžícími procesy</li>
+                                <li class="list-item-OS">Zahrnuje uložení/obnovení stavu procesu</li>
+                                <li class="list-item-OS">Způsobuje režii systému</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Životní cyklus procesu -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Životní cyklus procesu</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Stavy procesu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Vytvořený - nově založený proces</li>
+                                <li class="list-item-OS">Připravený - čeká na přidělení CPU</li>
+                                <li class="list-item-OS">Běžící - právě vykonáván na CPU</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Přechody mezi stavy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Běžící → Připravený (odebrání CPU)</li>
+                                <li class="list-item-OS">Připravený → Běžící (přidělení CPU)</li>
+                                <li class="list-item-OS">Běžící → Blokovaný (čekání na zdroj)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plánování procesů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Plánování procesů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Krátkodobé plánování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Přidělování procesoru procesům</li>
+                                <li class="list-item-OS">Využívá různé plánovací strategie</li>
+                                <li class="list-item-OS">Ovlivňuje celkový výkon systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Plánovací strategie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">FCFS - první příchozí první obsloužen</li>
+                                <li class="list-item-OS">SJF - nejkratší proces první</li>
+                                <li class="list-item-OS">Prioritní plánování dle důležitosti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typy procesů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Typy procesů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Thread (vlákno)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Odlehčený proces sdílející prostředky</li>
+                                <li class="list-item-OS">Nižší režie při přepínání</li>
+                                <li class="list-item-OS">Rychlejší vzájemná komunikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Systémové procesy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Zajišťují chod operačního systému</li>
+                                <li class="list-item-OS">Běží s vysokými právy</li>
+                                <li class="list-item-OS">Spouštěny při startu systému</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

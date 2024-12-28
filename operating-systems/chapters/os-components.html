@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operační systém a jeho součásti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Operační systém a jeho součásti
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Funkce OS -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Funkce operačního systému</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Ovládání počítače</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Zajišťuje základní řízení hardwaru počítače</li>
+                                <li class="list-item-OS">Umožňuje spouštění a ukončování programů</li>
+                                <li class="list-item-OS">Zajišťuje přenos dat mezi I/O zařízeními</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Abstrakce hardware</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Poskytuje jednotné rozhraní pro programy</li>
+                                <li class="list-item-OS">Využívá API pro komunikaci s hardwarem</li>
+                                <li class="list-item-OS">Odděluje aplikace od fyzického hardware</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Správa prostředků</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Přiděluje systémové prostředky jednotlivým procesům</li>
+                                <li class="list-item-OS">Řídí přístup k sdíleným komponentám</li>
+                                <li class="list-item-OS">Kontroluje využití CPU, paměti, I/O</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typy jader OS -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Typy jader OS</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Monolitické jádro</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Všechny funkce jsou v jednom celku</li>
+                                <li class="list-item-OS">Běží v privilegovaném režimu procesoru</li>
+                                <li class="list-item-OS">Příklad: Linux, FreeBSD</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Mikrojádro</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Obsahuje pouze nejnutnější funkce systému</li>
+                                <li class="list-item-OS">Služby běží jako samostatné procesy</li>
+                                <li class="list-item-OS">Zaměřeno na modularitu a bezpečnost</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Hybridní jádro</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Kombinuje vlastnosti obou předchozích typů</li>
+                                <li class="list-item-OS">Kompromis mezi výkonem a modularitou</li>
+                                <li class="list-item-OS">Příklad: Windows NT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RTOS -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">RTOS (Real-Time OS)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Hard RTOS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Garantuje pevné časové limity odezvy</li>
+                                <li class="list-item-OS">Určen pro kritické řídící systémy</li>
+                                <li class="list-item-OS">Využití v průmyslu a embedded systémech</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Soft RTOS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Flexibilnější časové limity než Hard RTOS</li>
+                                <li class="list-item-OS">Toleruje občasné překročení limitů</li>
+                                <li class="list-item-OS">Využíván v multimediálních aplikacích</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiprocessing -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Multiprocessing</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Symetrický (SMP)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Všechny procesory jsou rovnocenné</li>
+                                <li class="list-item-OS">Sdílí společnou paměť a periferie</li>
+                                <li class="list-item-OS">Nejčastější architektura současných systémů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Asymetrický (ASMP)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Procesory mají různé role</li>
+                                <li class="list-item-OS">Dedikované procesory pro specifické úlohy</li>
+                                <li class="list-item-OS">Využití ve specializovaných systémech</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

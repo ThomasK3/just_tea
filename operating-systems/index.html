@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kybernetická bezpečnost - Maturitní příprava</title>
+    <title>Operační systémy - Maturitní příprava</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,175 +29,171 @@
                 <div class="card-header">
                     <div class="flex items-center gap-3">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                         <h2 class="text-2xl font-semibold text-green-800">Přehled témat</h2>
                     </div>
                 </div>
                 <div class="p-6">
                     <div class="grid gap-6">
-<!------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------->
+                        <!-- 1. Téma -->
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/goals-and-basics.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/computer-basics.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>1. Základní pojmy a vývoj OS</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Cíle kybernetické bezpečnosti, typy hrozeb, fáze kybernetických útoků a speciální kategorie útoků.</p>
+                            <p class="text-gray-600">Historie vývoje operačních systémů, základní terminologie a klíčové koncepty OS.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
+                        <!-- 2. Téma -->
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/cia-mccumber.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/os-components.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>2. Stavba OS</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Základní bezpečnostní principy CIA triády, AAA framework, stavy dat a dimenze McCumber Cube.</p>
+                            <p class="text-gray-600">Architektura OS, jádro systému, systémová volání a struktura souborového systému.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
+                        <!-- Další témata -->
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/malware-types.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/boot-process.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>3. Start počítače</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled typů škodlivého software, jejich charakteristiky a příznaky napadení systému.</p>
+                            <p class="text-gray-600">Bootovací proces, BIOS/UEFI, zaváděcí programy a inicializace systému.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/social-engineering.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/microprocessors.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>4. Mikroprocesory</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled různých technik sociálního inženýrství, jejich charakteristiky a preventivní opatření proti nim.</p>
+                            <p class="text-gray-600">Architektura procesorů, instrukční sady, přerušení a správa procesoru v OS.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/network-attacks.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/hardware-resources.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>5. Hardwarové prostředky</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled různých typů síťových útoků, metody odposlouchávání, DoS útoky a ochranná opatření proti nim.</p>
+                            <p class="text-gray-600">Správa hardwaru, ovladače zařízení, přerušení a DMA přenosy.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/owasp-top10.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/os-processes.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>6. Procesy</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled nejkritičtějších bezpečnostních rizik webových aplikací podle OWASP, jejich charakteristiky a příklady.</p>
+                            <p class="text-gray-600">Správa procesů, plánování, stavy procesů a přepínání kontextu.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/cryptography.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/ipc.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>7. Spolupráce mezi procesy</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled typů šifrování, hashování, digitálních podpisů a praktické implementace kryptografických metod.</p>
+                            <p class="text-gray-600">Meziprocesová komunikace, synchronizace, semafory a sdílená paměť.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/access-control.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/race-deadlock.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>8. Souběh a uváznutí</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled modelů řízení přístupu, jejich implementace a správa včetně základních principů a best practices.</p>
+                            <p class="text-gray-600">Problematika souběhu, detekce a prevence uváznutí, kritické sekce.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/firewall-types.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/memory.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>9. Správa paměti</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled různých typů firewallů, jejich funkce a využití včetně proxy serverů a pokročilých bezpečnostních funkcí.</p>
+                            <p class="text-gray-600">Virtuální paměť, stránkování, segmentace a správa operační paměti.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/authentication-systems.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/filesystems.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>10. Souborové systémy</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled autentizačních metod, vícefaktorové autentizace, protokolů a bezpečnostních praktik pro ověřování identity.</p>
+                            <p class="text-gray-600">Typy souborových systémů, organizace dat, správa souborů a adresářů.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/asset-management.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/windows-network.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>11. Systém Windows v síti (praktická otázka)</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled klasifikace aktiv, řízení rizik, řešení single point of failure a implementace redundantních systémů.</p>
+                            <p class="text-gray-600">Síťové služby Windows, Active Directory, skupinové politiky a sdílení zdrojů.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/endpoint-security.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/windows-management.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>12. Správa systému Windows (praktická otázka)</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled zabezpečení systémů, hardening, monitorování a pokročilých ochranných mechanismů pro koncové body a servery.</p>
+                            <p class="text-gray-600">Správa uživatelů, zabezpečení, aktualizace a údržba systému Windows.</p>
                         </div>
-<!------------------------------------------------------------------------------------------------------->
+
                         <div class="topic-section">
                             <h3 class="text-xl font-semibold text-green-700 mb-3">
-                                <a href="chapters/network-security.html" class="hover:text-green-500 flex items-center gap-2">
+                                <a href="chapters/linux-management.html" class="hover:text-green-500 flex items-center gap-2">
                                     <span>13. Správa systému Linux (praktická otázka)</span>
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                             </h3>
-                            <p class="text-gray-600">Přehled monitorovacích systémů, behavior-based security, síťové segmentace a pokročilých technik zabezpečení síťové infrastruktury.</p>
+                            <p class="text-gray-600">Základní příkazy, správa procesů, uživatelů a oprávnění v Linuxu.</p>
                         </div>
-
-<!------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------->
                     </div>
                 </div>
             </div>
@@ -207,7 +203,7 @@
     <!-- Footer -->
     <footer class="bg-green-800 text-white py-4 mt-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Maturitní příprava - Kybernetická bezpečnost</p>
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
         </div>
     </footer>
 </body>
