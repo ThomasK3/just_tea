@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrstva síťového přístupu a Ethernet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Vrstva síťového přístupu a Ethernet
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Fyzické komponenty -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Fyzické komponenty</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Ethernet IEEE 802.3</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Standardizovaný protokol pro lokální sítě</li>
+                                <li class="list-item-PC">Definuje přenos dat po fyzickém médiu</li>
+                                <li class="list-item-PC">Nejpoužívanější technologie pro LAN sítě</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">MAC vrstva</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Řídí přístup k přenosovému médiu</li>
+                                <li class="list-item-PC">Zajišťuje adresaci pomocí MAC adres</li>
+                                <li class="list-item-PC">Implementuje CSMA/CD pro detekci kolizí</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">LLC vrstva</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Zajišťuje spolehlivost přenosu dat</li>
+                                <li class="list-item-PC">Poskytuje rozhraní vyšším vrstvám</li>
+                                <li class="list-item-PC">Implementuje kontrolu toku dat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adresace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Adresace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Broadcast</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Vysílání všem zařízením v síti</li>
+                                <li class="list-item-PC">Využívá speciální MAC adresu FF:FF:FF:FF:FF:FF</li>
+                                <li class="list-item-PC">Používá se pro ARP dotazy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Multicast</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Vysílání skupině zařízení v síti</li>
+                                <li class="list-item-PC">První oktet MAC adresy je lichý</li>
+                                <li class="list-item-PC">Využíván pro streamování videa</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Anycast</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Doručení nejbližšímu členovi skupiny</li>
+                                <li class="list-item-PC">Optimalizuje směrování v síti</li>
+                                <li class="list-item-PC">Používán pro DNS servery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Přenosová média -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Přenosová média</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Metalické kabely</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přenos dat pomocí měděných vodičů</li>
+                                <li class="list-item-PC">Kategorie Cat5e až Cat8</li>
+                                <li class="list-item-PC">Používané pro běžné LAN sítě</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Optická vlákna</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přenos dat pomocí světelných paprsků</li>
+                                <li class="list-item-PC">Mnohovidové nebo jednovidové provedení</li>
+                                <li class="list-item-PC">Používané pro páteřní spoje</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Bezdrátové sítě</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přenos dat pomocí rádiových vln</li>
+                                <li class="list-item-PC">Využívá standardy IEEE 802.11</li>
+                                <li class="list-item-PC">Poskytuje mobilitu koncovým zařízením</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

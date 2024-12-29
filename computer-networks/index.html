@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operační systémy - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Počítačové sítě
+        </h1>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="card main-card">
+                <div class="card-header">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" stroke-width="2"/>
+                            <circle cx="4" cy="4" r="2" stroke-width="2"/>
+                            <circle cx="20" cy="4" r="2" stroke-width="2"/>
+                            <circle cx="4" cy="20" r="2" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="2" stroke-width="2"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 9V6m0 12v-3m-3-3H6m12 0h-3m-5-5l2 2m8-2l-2 2m-8 8l2-2m8 2l-2-2"/>
+                        </svg>
+                        <h2 class="text-2xl font-semibold text-red-800">Přehled témat</h2>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid gap-6">
+                        <!-- 1. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/network-access.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>1. Vrstva síťového přístupu a Ethernet</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Fyzické komponenty Ethernetu, adresace, přenosová média a standardy IEEE 802.3.</p>
+                        </div>
+
+                        <!-- 2. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/network-models.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>2. Referenční modely ISO/OSI a TCP/IP</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Vrstvy referenčních modelů, jejich funkce a vzájemné porovnání.</p>
+                        </div>
+
+                        <!-- 3. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/ethernet.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>3. Ethernet</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Principy Ethernetu, standardy, CSMA/CD, typy kabeláže a konektorů.</p>
+                        </div>
+
+                        <!-- 4. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/wifi.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>4. WiFi sítě</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Standardy WiFi sítí, bezpečnost, šifrování a konfigurace přístupových bodů.</p>
+                        </div>
+
+                        <!-- 5. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/ipv4.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>5. IPv4 adresace a základní směrování</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Struktura IPv4 adresy, třídy, subnetting, NAT a základní principy směrování.</p>
+                        </div>
+
+                        <!-- 6. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/ipv6.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>6. IPv6 protokol</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Struktura IPv6 adres, přechodové mechanismy, zabezpečení a implementace.</p>
+                        </div>
+
+                        <!-- 7. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/network-services.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>7. Síťové služby</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">DHCP, DNS, webové služby, elektronická pošta a další síťové služby.</p>
+                        </div>
+
+                        <!-- 8. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/routing.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>8. Směrovací protokoly</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">RIP, OSPF, BGP a další směrovací protokoly, jejich konfigurace a použití.</p>
+                        </div>
+
+                        <!-- 9. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/network-security.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>9. Zabezpečení počítačových sítí</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Firewally, VPN, IDS/IPS systémy a další bezpečnostní prvky sítí.</p>
+                        </div>
+
+                        <!-- 10. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/cisco-devices.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>10. Cisco směrovače a přepínače</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Základní konfigurace Cisco zařízení, IOS, správa a monitorování sítě.</p>
+                        </div>
+
+                        <!-- 11. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/vlan.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>11. VLAN sítě</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Virtuální LAN sítě, jejich konfigurace, trunk porty a InterVLAN routing.</p>
+                        </div>
+
+                        <!-- 12. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-red-700 mb-3">
+                                <a href="chapters/network-monitoring.html" class="hover:text-red-500 flex items-center gap-2">
+                                    <span>12. Monitoring a správa sítě</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">SNMP protokol, síťové analyzátory, logování a nástroje pro správu sítě.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

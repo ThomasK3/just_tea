@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souborové systémy - Operační systémy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Souborové systémy
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní koncepty -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Základní koncepty</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Souborový systém</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Organizovaná struktura pro ukládání dat</li>
+                                <li class="list-item text-blue-600">Spravuje metadata a samotná data</li>
+                                <li class="list-item text-blue-600">Implementován jako součást operačního systému</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Metadata</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Informace popisující organizaci dat</li>
+                                <li class="list-item text-blue-600">Obsahují oprávnění, časy, velikosti souborů</li>
+                                <li class="list-item text-blue-600">Kritická pro konzistenci souborového systému</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Klíčové typy systémů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Klíčové typy systémů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">FAT</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">File Allocation Table od Microsoftu</li>
+                                <li class="list-item text-blue-600">Jednoduchý systém s omezenou velikostí</li>
+                                <li class="list-item text-blue-600">Používaný především pro přenosná média</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">NTFS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Pokročilý systém pro Windows NT</li>
+                                <li class="list-item text-blue-600">Podporuje žurnálování a šifrování dat</li>
+                                <li class="list-item text-blue-600">Maximální velikost oddílu 256TB</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">ext4</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Standardní systém pro Linux</li>
+                                <li class="list-item text-blue-600">Využívá i-nodes pro metadata</li>
+                                <li class="list-item text-blue-600">Podporuje extenty pro efektivní alokaci</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé vlastnosti -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Pokročilé vlastnosti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Žurnálování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Zaznamenává změny před jejich provedením</li>
+                                <li class="list-item text-blue-600">Umožňuje obnovení po pádu systému</li>
+                                <li class="list-item text-blue-600">Zvyšuje spolehlivost na úkor výkonu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Fragmentace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Rozdělení souboru do různých částí disku</li>
+                                <li class="list-item text-blue-600">Snižuje rychlost čtení a zápisu</li>
+                                <li class="list-item text-blue-600">Řešeno defragmentací nebo prevencí</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Extenty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item text-blue-600">Souvislé bloky alokovaného prostoru</li>
+                                <li class="list-item text-blue-600">Snižují režii správy metadat</li>
+                                <li class="list-item text-blue-600">Zefektivňují práci s velkými soubory</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

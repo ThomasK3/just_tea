@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-VLAN routing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Inter-VLAN routing
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Směrování mezi VLANy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Směrování mezi VLANy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Router-on-a-Stick</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Směrování přes jedno fyzické rozhraní</li>
+                                <li class="list-item-PC">Využívá subinterface na routeru</li>
+                                <li class="list-item-PC">Propojuje VLANy přes trunk port</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Legacy metoda</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Každá VLAN má fyzické rozhraní</li>
+                                <li class="list-item-PC">Vyžaduje více portů na routeru</li>
+                                <li class="list-item-PC">Historicky první způsob směrování VLANů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">L3 Switch</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Integrace směrování do přepínače</li>
+                                <li class="list-item-PC">Vysokorychlostní směrování v hardwaru</li>
+                                <li class="list-item-PC">Nejefektivnější metoda Inter-VLAN routingu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konfigurace směrování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Konfigurace směrování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Trunk konfigurace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Nastavení 802.1Q tagování</li>
+                                <li class="list-item-PC">Definice povolených VLAN</li>
+                                <li class="list-item-PC">Zajišťuje přenos více VLAN</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">IP addressing</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přiřazení IP adres rozhraním</li>
+                                <li class="list-item-PC">Definice výchozích bran VLANů</li>
+                                <li class="list-item-PC">Umožňuje směrování mezi VLANy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Výkonnostní aspekty -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Výkonnostní aspekty</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Latence</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Zpoždění při přenosu mezi VLANy</li>
+                                <li class="list-item-PC">Závisí na zvolené metodě směrování</li>
+                                <li class="list-item-PC">Ovlivňuje rychlost komunikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Propustnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Maximální přenosová kapacita mezi VLANy</li>
+                                <li class="list-item-PC">Omezena použitou metodou směrování</li>
+                                <li class="list-item-PC">Určuje výkon Inter-VLAN komunikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Škálovatelnost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Možnost rozšíření počtu VLANů</li>
+                                <li class="list-item-PC">Závisí na hardwarových možnostech</li>
+                                <li class="list-item-PC">Určuje flexibilitu síťového designu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

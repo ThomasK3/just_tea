@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referenční model OSI/ISO a síťové prvky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Referenční model OSI/ISO a síťové prvky
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Model OSI/ISO -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Model OSI/ISO</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Vrstvy modelu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Sedmivrstvý model síťové komunikace</li>
+                                <li class="list-item-PC">Rozděluje komunikaci na logické části</li>
+                                <li class="list-item-PC">Poskytuje standardizovaný komunikační rámec</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">PDU (Protocol Data Unit)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Datová jednotka konkrétní vrstvy</li>
+                                <li class="list-item-PC">Zapouzdřuje data vyšších vrstev</li>
+                                <li class="list-item-PC">Přidává řídící informace vrstvy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Zapouzdřování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Proces přidávání hlaviček a zápatí</li>
+                                <li class="list-item-PC">Vytváří hierarchickou strukturu dat</li>
+                                <li class="list-item-PC">Umožňuje spolehlivý přenos informací</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síťové prvky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Síťové prvky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Opakovač (Repeater)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Zesiluje a obnovuje síťové signály</li>
+                                <li class="list-item-PC">Pracuje na fyzické vrstvě</li>
+                                <li class="list-item-PC">Prodlužuje dosah síťových segmentů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Most (Bridge)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Propojuje síťové segmenty</li>
+                                <li class="list-item-PC">Pracuje na linkové vrstvě</li>
+                                <li class="list-item-PC">Filtruje provoz podle MAC adres</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Přepínač (Switch)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Inteligentní přepínání rámců v síti</li>
+                                <li class="list-item-PC">Vytváří virtuální okruhy komunikace</li>
+                                <li class="list-item-PC">Zvyšuje efektivitu síťového provozu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé síťové prvky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Pokročilé síťové prvky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Směrovač (Router)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Směruje pakety mezi různými sítěmi</li>
+                                <li class="list-item-PC">Pracuje na síťové vrstvě</li>
+                                <li class="list-item-PC">Používá směrovací protokoly a tabulky</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">L3 Switch</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Kombinuje funkce přepínače a směrovače</li>
+                                <li class="list-item-PC">Poskytuje vysokorychlostní směrování v LANech</li>
+                                <li class="list-item-PC">Optimalizuje provoz v lokálních sítích</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Firewall</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Kontroluje a filtruje síťový provoz</li>
+                                <li class="list-item-PC">Implementuje bezpečnostní politiky sítě</li>
+                                <li class="list-item-PC">Chrání před neoprávněným přístupem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

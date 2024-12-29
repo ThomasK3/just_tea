@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLAN, návrh podnikové sítě</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            VLAN, návrh podnikové sítě
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- VLAN -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">VLAN (Virtual LAN)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Koncepce VLAN</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Logické rozdělení fyzické sítě</li>
+                                <li class="list-item-PC">Izoluje provoz mezi skupinami</li>
+                                <li class="list-item-PC">Zvyšuje bezpečnost a výkon sítě</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Access VLAN</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přístupový port pro koncová zařízení</li>
+                                <li class="list-item-PC">Přiřazuje zařízení do jedné VLAN</li>
+                                <li class="list-item-PC">Používán pro připojení počítačů/tiskáren</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Trunk VLAN</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přenáší více VLAN jedním spojem</li>
+                                <li class="list-item-PC">Využívá standard IEEE 802.1Q</li>
+                                <li class="list-item-PC">Propojuje přepínače s více VLANami</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Management VLAN -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Management VLAN</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Native VLAN</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Výchozí VLAN pro neoznačené rámce</li>
+                                <li class="list-item-PC">Standardně VLAN 1</li>
+                                <li class="list-item-PC">Zajišťuje zpětnou kompatibilitu zařízení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Voice VLAN</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Specializovaná VLAN pro VoIP</li>
+                                <li class="list-item-PC">Poskytuje QoS pro hlasový provoz</li>
+                                <li class="list-item-PC">Odděluje hlasovou a datovou komunikaci</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podsítě -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Podsítě</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">VLSM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Variabilní délka masky podsítě</li>
+                                <li class="list-item-PC">Optimalizuje využití adresního prostoru</li>
+                                <li class="list-item-PC">Umožňuje efektivní rozdělení sítě</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Návrh adresování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Hierarchické rozdělení IP adres</li>
+                                <li class="list-item-PC">Zohledňuje velikost jednotlivých podsítí</li>
+                                <li class="list-item-PC">Plánuje prostor pro budoucí růst</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Segmentace sítě</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Rozdělení sítě na logické celky</li>
+                                <li class="list-item-PC">Odděluje různé typy provozu</li>
+                                <li class="list-item-PC">Zlepšuje správu a bezpečnost sítě</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

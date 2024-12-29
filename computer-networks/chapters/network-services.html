@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spolehlivá síť - STP, EtherChannel, FHRP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Spolehlivá síť - STP, EtherChannel, FHRP
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- STP -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">STP (Spanning Tree Protocol)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Základní funkce</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Prevence smyček v síťové topologii</li>
+                                <li class="list-item-PC">Vytváří logickou stromovou strukturu</li>
+                                <li class="list-item-PC">Zajišťuje redundantní záložní cesty</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Druhy STP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">IEEE 802.1D, RSTP, MSTP</li>
+                                <li class="list-item-PC">Různé rychlosti konvergence protokolu</li>
+                                <li class="list-item-PC">Optimalizuje provoz v různých VLANech</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Konvergence STP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Proces výběru aktivních cest</li>
+                                <li class="list-item-PC">Blokuje redundantní spojení</li>
+                                <li class="list-item-PC">Reaguje na změny síťové topologie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EtherChannel -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">EtherChannel</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Princip fungování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Agregace více fyzických linek</li>
+                                <li class="list-item-PC">Zvyšuje šířku pásma spojení</li>
+                                <li class="list-item-PC">Poskytuje redundanci na L2</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Protokoly EtherChannelu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">PAgP (Cisco proprietární protokol)</li>
+                                <li class="list-item-PC">LACP (IEEE 802.3ad standard)</li>
+                                <li class="list-item-PC">Zajišťují automatickou konfiguraci spojení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FHRP -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">FHRP (First Hop Redundancy Protocols)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">HSRP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Cisco proprietární protokol redundance</li>
+                                <li class="list-item-PC">Poskytuje virtuální výchozí bránu</li>
+                                <li class="list-item-PC">Zajišťuje vysokou dostupnost směrování</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">VRRP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Standardizovaný protokol redundance brány</li>
+                                <li class="list-item-PC">Podobná funkce jako HSRP</li>
+                                <li class="list-item-PC">Podporován různými výrobci zařízení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">GLBP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Advanced Gateway Load Balancing</li>
+                                <li class="list-item-PC">Umožňuje load balancing mezi branami</li>
+                                <li class="list-item-PC">Optimalizuje využití redundantních spojení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

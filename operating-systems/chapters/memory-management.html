@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa paměti v operačních systémech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-green-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-green-200">/</span>
+                <a href="../index.html" class="text-lg">Operační systémy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-green-800 mb-8 text-center">
+            Správa paměti v operačních systémech
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní principy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Základní principy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Operační paměť</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Vnitřní paměť počítače pro běžící programy</li>
+                                <li class="list-item-OS">Přímo adresovatelná procesorem pomocí sběrnice</li>
+                                <li class="list-item-OS">Využívá cache pro zrychlení přístupu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Adresní prostor</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Logické uspořádání paměti pro procesy</li>
+                                <li class="list-item-OS">Začíná od adresy 0 pro každý proces</li>
+                                <li class="list-item-OS">Překládá se na fyzické adresy v RAM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metody přidělování paměti -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Metody přidělování paměti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Přidělování veškeré paměti</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Nejjednodušší způsob správy paměti procesům</li>
+                                <li class="list-item-OS">Využíváno v jednouživatelských systémech</li>
+                                <li class="list-item-OS">Omezuje multitasking na jeden proces</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Přidělování pevných bloků</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Rozdělení paměti na pevné oblasti</li>
+                                <li class="list-item-OS">Umožňuje základní multitasking</li>
+                                <li class="list-item-OS">Vede k vnitřní fragmentaci</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Přidělování proměnných bloků</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Dynamické přidělování dle požadavků procesu</li>
+                                <li class="list-item-OS">Flexibilní využití paměti</li>
+                                <li class="list-item-OS">Způsobuje vnější fragmentaci</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtuální paměť -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Virtuální paměť</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Stránkování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Rozdělení paměti na stejně velké stránky</li>
+                                <li class="list-item-OS">Umožňuje nesouvislé umístění procesu</li>
+                                <li class="list-item-OS">Využívá tabulku stránek pro překlad adres</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Segmentace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Logické rozdělení programu na segmenty</li>
+                                <li class="list-item-OS">Segmenty mají různou velikost</li>
+                                <li class="list-item-OS">Využívá dvojici segment:offset</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problémy správy paměti -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-green-700">Problémy správy paměti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Memory leak</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Únik paměti při chybné dealokaci</li>
+                                <li class="list-item-OS">Vede k vyčerpání dostupné paměti</li>
+                                <li class="list-item-OS">Řeší se pomocí garbage collectoru</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-green-600 mb-3">Memory thrashing</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-OS">Nadměrné stránkování do/z disku</li>
+                                <li class="list-item-OS">Způsobuje výrazné zpomalení systému</li>
+                                <li class="list-item-OS">Vzniká při nedostatku fyzické paměti</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Operační systémy</p>
+        </div>
+    </footer>
+</body>
+</html>

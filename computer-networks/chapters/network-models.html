@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikační vrstva TCP/IP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Aplikační vrstva TCP/IP
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Modely komunikace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Modely komunikace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Peer-to-peer (P2P)</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Přímá komunikace mezi rovnocennými uzly</li>
+                                <li class="list-item-PC">Decentralizovaná architektura bez serveru</li>
+                                <li class="list-item-PC">Používán pro sdílení souborů (BitTorrent)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Klient-server</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Hierarchický model síťové komunikace</li>
+                                <li class="list-item-PC">Server poskytuje služby klientům</li>
+                                <li class="list-item-PC">Používán pro webové služby</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Základní protokoly -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Základní protokoly</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">HTTP/HTTPS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Protokol pro přenos webových stránek</li>
+                                <li class="list-item-PC">Používá porty 80 a 443</li>
+                                <li class="list-item-PC">Zajišťuje zabezpečený přenos dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">FTP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Protokol pro přenos souborů</li>
+                                <li class="list-item-PC">Používá porty 20 a 21</li>
+                                <li class="list-item-PC">Umožňuje nahrávání/stahování souborů serveru</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">SMTP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Protokol pro odesílání emailů</li>
+                                <li class="list-item-PC">Používá port 25</li>
+                                <li class="list-item-PC">Zajišťuje doručování pošty servery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Další protokoly -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Další protokoly</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">SSH</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Zabezpečený vzdálený přístup k systémům</li>
+                                <li class="list-item-PC">Používá port 22</li>
+                                <li class="list-item-PC">Nahrazuje nezabezpečený Telnet protokol</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">NTP</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Synchronizace času v síti</li>
+                                <li class="list-item-PC">Používá port 123</li>
+                                <li class="list-item-PC">Zajišťuje přesný čas systémů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">DNS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Překlad doménových jmen na IP</li>
+                                <li class="list-item-PC">Používá port 53</li>
+                                <li class="list-item-PC">Hierarchický systém doménových jmen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sdílení souborů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Sdílení souborů</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">SMB/CIFS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Protokol pro sdílení souborů Windows</li>
+                                <li class="list-item-PC">Používá port 445</li>
+                                <li class="list-item-PC">Umožňuje přístup ke sdíleným adresářům</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">NFS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Síťový souborový systém Unix/Linux</li>
+                                <li class="list-item-PC">Používá port 2049</li>
+                                <li class="list-item-PC">Poskytuje transparentní přístup k souborům</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>
