@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protokoly TCP a UDP - Počítačové sítě</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Protokoly TCP a UDP
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- TCP charakteristiky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">1. Základní charakteristiky TCP</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Spolehlivý přenos</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Garantuje doručení dat v správném pořadí</li>
+                                <li class="list-item-PC">Využívá potvrzování přijatých segmentů (ACK)</li>
+                                <li class="list-item-PC">Implementován v kritických aplikacích (web)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Navázání spojení</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Three-way handshake pro ustanovení spojení</li>
+                                <li class="list-item-PC">SYN, SYN-ACK, ACK sekvence paketů</li>
+                                <li class="list-item-PC">Používá se před začátkem přenosu dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Řízení toku</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Dynamická kontrola rychlosti přenosu dat</li>
+                                <li class="list-item-PC">Používá systém plovoucího okna (window)</li>
+                                <li class="list-item-PC">Předchází zahlcení přijímající strany</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UDP charakteristiky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">2. Charakteristiky UDP</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Nespolehlivý přenos</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Nečeká na potvrzení doručení dat</li>
+                                <li class="list-item-PC">Neřeší pořadí doručených datagramů</li>
+                                <li class="list-item-PC">Vhodný pro streamování a gaming</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Jednoduchost</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Minimální režie při přenosu dat</li>
+                                <li class="list-item-PC">Nemá mechanismy kontroly spojení</li>
+                                <li class="list-item-PC">Rychlejší než TCP pro jednoduchý přenos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Porty a multiplexing -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">3. Porty a multiplexing</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Well-known porty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Standardizované porty 0-1023 pro služby</li>
+                                <li class="list-item-PC">HTTP(80), HTTPS(443), DNS(53) protokoly</li>
+                                <li class="list-item-PC">Spravováno organizací IANA globálně</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Dynamické porty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Rozsah portů 49152-65535 pro klienty</li>
+                                <li class="list-item-PC">Přidělované operačním systémem automaticky</li>
+                                <li class="list-item-PC">Používané pro dočasná spojení aplikací</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Srovnání TCP/UDP -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">4. Srovnání TCP/UDP</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Oblasti použití</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">TCP pro spolehlivý přenos (web)</li>
+                                <li class="list-item-PC">UDP pro rychlý přenos (streaming)</li>
+                                <li class="list-item-PC">Každý protokol vhodný pro jiné aplikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Režie přenosu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">TCP má větší hlavičku paketu</li>
+                                <li class="list-item-PC">UDP minimalizuje dodatečná data</li>
+                                <li class="list-item-PC">Ovlivňuje celkovou efektivitu přenosu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>
