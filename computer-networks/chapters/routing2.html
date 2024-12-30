@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Směrování a směrovací protokoly - Počítačové sítě</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            Směrování a směrovací protokoly
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní principy směrování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Základní principy směrování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Směrovací rozhodnutí</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Výběr nejlepší cesty k cílové síti</li>
+                                <li class="list-item-PC">Založeno na informacích v směrovací tabulce</li>
+                                <li class="list-item-PC">Aplikace metriky pro výběr cesty</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Metrika cesty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Hodnocení kvality směrovací cesty</li>
+                                <li class="list-item-PC">Může zahrnovat počet skoků, šířku pásma</li>
+                                <li class="list-item-PC">Nižší metrika znamená lepší cestu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typy směrování -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Typy směrování</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Statické směrování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Manuální konfigurace cest administrátorem</li>
+                                <li class="list-item-PC">Neměnné cesty bez automatické adaptace</li>
+                                <li class="list-item-PC">Vhodné pro malé předvídatelné sítě</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Dynamické směrování</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Automatická adaptace na změny topologie</li>
+                                <li class="list-item-PC">Využívá směrovací protokoly pro aktualizace</li>
+                                <li class="list-item-PC">Vyžaduje více systémových zdrojů směrovače</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Směrovací protokoly -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Směrovací protokoly</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Distance-vector protokoly</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Směrovače sdílí vzdálenosti k cílům</li>
+                                <li class="list-item-PC">RIP omezen na 15 skoků</li>
+                                <li class="list-item-PC">Jednodušší implementace a konfigurace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Link-state protokoly</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Kompletní mapa síťové topologie</li>
+                                <li class="list-item-PC">OSPF využívá Dijkstrův algoritmus</li>
+                                <li class="list-item-PC">Rychlá konvergence při změnách topologie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Směrovací tabulka -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Směrovací tabulka</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Struktura záznamu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Cílová síť a maska sítě</li>
+                                <li class="list-item-PC">Next-hop adresa pro směrování</li>
+                                <li class="list-item-PC">Rozhraní pro odeslání paketu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Výběr cesty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Nejdelší shodný prefix má přednost</li>
+                                <li class="list-item-PC">Aplikace administrativní vzdálenosti protokolů</li>
+                                <li class="list-item-PC">Možnost více cest ke stejnému cíli</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>

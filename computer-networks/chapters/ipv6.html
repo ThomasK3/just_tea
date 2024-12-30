@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inter-VLAN routing</title>
+    <title>IPv6 Protokol - Počítačové sítě</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -21,101 +21,120 @@
 
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
-            Inter-VLAN routing
+            IPv6 Protokol
         </h1>
 
         <div class="max-w-6xl mx-auto space-y-6">
-            <!-- Směrování mezi VLANy -->
+            <!-- Základní charakteristiky -->
             <div class="card">
                 <div class="card-header bg-gray-100">
-                    <h2 class="text-xl font-semibold text-red-700">Směrování mezi VLANy</h2>
-                </div>
-                <div class="p-6">
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div>
-                            <h3 class="font-medium text-red-600 mb-3">Router-on-a-Stick</h3>
-                            <ul class="space-y-2">
-                                <li class="list-item-PC">Směrování přes jedno fyzické rozhraní</li>
-                                <li class="list-item-PC">Využívá subinterface na routeru</li>
-                                <li class="list-item-PC">Propojuje VLANy přes trunk port</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-medium text-red-600 mb-3">Legacy metoda</h3>
-                            <ul class="space-y-2">
-                                <li class="list-item-PC">Každá VLAN má fyzické rozhraní</li>
-                                <li class="list-item-PC">Vyžaduje více portů na routeru</li>
-                                <li class="list-item-PC">Historicky první způsob směrování VLANů</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-medium text-red-600 mb-3">L3 Switch</h3>
-                            <ul class="space-y-2">
-                                <li class="list-item-PC">Integrace směrování do přepínače</li>
-                                <li class="list-item-PC">Vysokorychlostní směrování v hardwaru</li>
-                                <li class="list-item-PC">Nejefektivnější metoda Inter-VLAN routingu</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Konfigurace směrování -->
-            <div class="card">
-                <div class="card-header bg-gray-100">
-                    <h2 class="text-xl font-semibold text-red-700">Konfigurace směrování</h2>
+                    <h2 class="text-xl font-semibold text-red-700">Základní charakteristiky</h2>
                 </div>
                 <div class="p-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <h3 class="font-medium text-red-600 mb-3">Trunk konfigurace</h3>
+                            <h3 class="font-medium text-red-600 mb-3">Adresní prostor</h3>
                             <ul class="space-y-2">
-                                <li class="list-item-PC">Nastavení 802.1Q tagování</li>
-                                <li class="list-item-PC">Definice povolených VLAN</li>
-                                <li class="list-item-PC">Zajišťuje přenos více VLAN</li>
+                                <li class="list-item-PC">128 bitová délka IPv6 adresy</li>
+                                <li class="list-item-PC">Zápis v hexadecimálním formátu pomocí dvojteček</li>
+                                <li class="list-item-PC">Umožňuje 2^128 unikátních adres</li>
                             </ul>
                         </div>
                         <div>
-                            <h3 class="font-medium text-red-600 mb-3">IP addressing</h3>
+                            <h3 class="font-medium text-red-600 mb-3">Formát adresy</h3>
                             <ul class="space-y-2">
-                                <li class="list-item-PC">Přiřazení IP adres rozhraním</li>
-                                <li class="list-item-PC">Definice výchozích bran VLANů</li>
-                                <li class="list-item-PC">Umožňuje směrování mezi VLANy</li>
+                                <li class="list-item-PC">Osm skupin po čtyřech hexadecimálních číslicích</li>
+                                <li class="list-item-PC">Možnost zkrácení pomocí vynechání nul</li>
+                                <li class="list-item-PC">Prefix/délka prefixu určuje síťovou část</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Výkonnostní aspekty -->
+            <!-- Typy adres -->
             <div class="card">
                 <div class="card-header bg-gray-100">
-                    <h2 class="text-xl font-semibold text-red-700">Výkonnostní aspekty</h2>
+                    <h2 class="text-xl font-semibold text-red-700">Typy adres</h2>
                 </div>
                 <div class="p-6">
                     <div class="grid md:grid-cols-3 gap-6">
                         <div>
-                            <h3 class="font-medium text-red-600 mb-3">Latence</h3>
+                            <h3 class="font-medium text-red-600 mb-3">Unicast</h3>
                             <ul class="space-y-2">
-                                <li class="list-item-PC">Zpoždění při přenosu mezi VLANy</li>
-                                <li class="list-item-PC">Závisí na zvolené metodě směrování</li>
-                                <li class="list-item-PC">Ovlivňuje rychlost komunikace</li>
+                                <li class="list-item-PC">Identifikuje jediné síťové rozhraní</li>
+                                <li class="list-item-PC">Global Unicast začíná prefixem 2000::/3</li>
+                                <li class="list-item-PC">Umožňuje přímou komunikaci mezi zařízeními</li>
                             </ul>
                         </div>
                         <div>
-                            <h3 class="font-medium text-red-600 mb-3">Propustnost</h3>
+                            <h3 class="font-medium text-red-600 mb-3">Multicast</h3>
                             <ul class="space-y-2">
-                                <li class="list-item-PC">Maximální přenosová kapacita mezi VLANy</li>
-                                <li class="list-item-PC">Omezena použitou metodou směrování</li>
-                                <li class="list-item-PC">Určuje výkon Inter-VLAN komunikace</li>
+                                <li class="list-item-PC">Adresa pro skupinu zařízení</li>
+                                <li class="list-item-PC">Začíná prefixem FF00::/8</li>
+                                <li class="list-item-PC">Používá se pro skupinovou komunikaci</li>
                             </ul>
                         </div>
                         <div>
-                            <h3 class="font-medium text-red-600 mb-3">Škálovatelnost</h3>
+                            <h3 class="font-medium text-red-600 mb-3">Anycast</h3>
                             <ul class="space-y-2">
-                                <li class="list-item-PC">Možnost rozšíření počtu VLANů</li>
-                                <li class="list-item-PC">Závisí na hardwarových možnostech</li>
-                                <li class="list-item-PC">Určuje flexibilitu síťového designu</li>
+                                <li class="list-item-PC">Adresa sdílená více uzly</li>
+                                <li class="list-item-PC">Doručení nejbližšímu členu skupiny</li>
+                                <li class="list-item-PC">Využití pro load balancing služeb</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objevování sousedů -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Objevování sousedů (NDP)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Router Solicitation</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Žádost o informace od směrovače</li>
+                                <li class="list-item-PC">Posílá se na multicastovou adresu</li>
+                                <li class="list-item-PC">Součást automatické konfigurace zařízení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">Neighbor Advertisement</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Oznámení dostupnosti síťového uzlu</li>
+                                <li class="list-item-PC">Obsahuje MAC adresu zařízení</li>
+                                <li class="list-item-PC">Nahrazuje ARP protokol z IPv4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Konfigurace -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">Konfigurace</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">SLAAC</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Bezstavová automatická konfigurace adres</li>
+                                <li class="list-item-PC">Využívá Router Advertisement zprávy</li>
+                                <li class="list-item-PC">Zařízení si samo generuje adresu</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-red-600 mb-3">DHCPv6</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-PC">Stavová konfigurace síťových parametrů</li>
+                                <li class="list-item-PC">Přiděluje adresy a další nastavení</li>
+                                <li class="list-item-PC">Podporuje bezpečnostní mechanismy pro přidělování</li>
                             </ul>
                         </div>
                     </div>
