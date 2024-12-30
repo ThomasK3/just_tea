@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Základní pojmy MCU - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-purple-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-purple-200">/</span>
+                <a href="../index.html" class="text-lg">Mikropočítače</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+            Mikrokontroléry (MCU) - Základní pojmy
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- 1. Architektura MCU -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">1. Architektura MCU</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Procesorové jádro -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Procesorové jádro</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Centrální výpočetní jednotka mikrokontroléru</li>
+                                <li class="list-item-MP">Vykonává instrukce v strojovém kódu</li>
+                                <li class="list-item-MP">Nejčastěji RISC architektura pro embedded</li>
+                            </ul>
+                        </div>
+                        <!-- Paměťový subsystém -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Paměťový subsystém</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Flash paměť pro program a data</li>
+                                <li class="list-item-MP">SRAM pro dočasné ukládání proměnných</li>
+                                <li class="list-item-MP">EEPROM pro trvalé uživatelské nastavení</li>
+                            </ul>
+                        </div>
+                        <!-- Sběrnicový systém -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Sběrnicový systém</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Propojuje komponenty uvnitř mikrokontroléru</li>
+                                <li class="list-item-MP">Zajišťuje synchronní přenos dat</li>
+                                <li class="list-item-MP">Například SPI pro komunikaci s periferiemi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Integrované periferie -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">2. Integrované periferie</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Časovače/Čítače -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Časovače/Čítače</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Hardware pro měření času/počítání událostí</li>
+                                <li class="list-item-MP">Nezávislý běh na procesoru</li>
+                                <li class="list-item-MP">Generování PWM pro řízení motorů</li>
+                            </ul>
+                        </div>
+                        <!-- A/D převodník -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">A/D převodník</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Převádí analogový signál na digitální</li>
+                                <li class="list-item-MP">Typicky 10-12 bitové rozlišení</li>
+                                <li class="list-item-MP">Měření napětí ze senzorů</li>
+                            </ul>
+                        </div>
+                        <!-- Komunikační rozhraní -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Komunikační rozhraní</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">UART, I2C, SPI standardní protokoly</li>
+                                <li class="list-item-MP">Asynchronní/synchronní přenos dat</li>
+                                <li class="list-item-MP">Propojení s externími zařízeními</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Vlastnosti MCU -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">3. Vlastnosti MCU</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Napájecí režimy -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Napájecí režimy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Active, Sleep, Deep-sleep módy</li>
+                                <li class="list-item-MP">Řízení spotřeby podle aktivity</li>
+                                <li class="list-item-MP">Bateriový provoz embedded zařízení</li>
+                            </ul>
+                        </div>
+                        <!-- Watchdog -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Watchdog</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Časovač pro detekci zamrznutí programu</li>
+                                <li class="list-item-MP">Automatický restart při chybě</li>
+                                <li class="list-item-MP">Zvýšení spolehlivosti embedded systémů</li>
+                            </ul>
+                        </div>
+                        <!-- Boot loader -->
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Boot loader</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Program pro nahrávání aplikačního kódu</li>
+                                <li class="list-item-MP">Umožňuje aktualizaci firmware</li>
+                                <li class="list-item-MP">Programování MCU přes UART/USB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+        </div>
+    </footer>
+</body>
+</html>

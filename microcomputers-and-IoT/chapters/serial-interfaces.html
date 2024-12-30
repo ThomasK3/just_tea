@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sériová rozhraní MCU - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Sériová rozhraní MCU
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. UART/USART -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. UART/USART</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Základní charakteristiky -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Základní charakteristiky</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Asynchronní sériová komunikace dvěma vodiči</li>
+                               <li class="list-item-MP">Nastavitelná přenosová rychlost (baudrate)</li>
+                               <li class="list-item-MP">Komunikace MCU s počítačem</li>
+                           </ul>
+                       </div>
+                       <!-- Konfigurace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Konfigurace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Start/stop bity, délka dat</li>
+                               <li class="list-item-MP">Parita pro detekci chyb</li>
+                               <li class="list-item-MP">Full-duplex obousměrný přenos</li>
+                           </ul>
+                       </div>
+                       <!-- Implementace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Implementace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Buffery pro příjem/vysílání</li>
+                               <li class="list-item-MP">Přerušení při dokončení přenosu</li>
+                               <li class="list-item-MP">DMA pro efektivní přenos</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. SPI -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. SPI</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Architektura -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Architektura</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Synchronní sériové rozhraní</li>
+                               <li class="list-item-MP">Master-Slave komunikace</li>
+                               <li class="list-item-MP">Hodinový signál od masteru</li>
+                           </ul>
+                       </div>
+                       <!-- Signály -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Signály</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">MOSI, MISO, SCK, CS</li>
+                               <li class="list-item-MP">Výběr slave zařízení</li>
+                               <li class="list-item-MP">Plně duplexní přenos</li>
+                           </ul>
+                       </div>
+                       <!-- Použití -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Použití</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Vysokorychlostní datový přenos</li>
+                               <li class="list-item-MP">Připojení displejů, pamětí, senzorů</li>
+                               <li class="list-item-MP">Kaskádové zapojení více zařízení</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. I2C -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. I2C</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Protokol -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Protokol</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Dvouvodičová synchronní sběrnice</li>
+                               <li class="list-item-MP">Adresovatelné připojení zařízení</li>
+                               <li class="list-item-MP">Multi-master podpora</li>
+                           </ul>
+                       </div>
+                       <!-- Časování -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Časování</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Start/Stop podmínky</li>
+                               <li class="list-item-MP">Acknowledge bit</li>
+                               <li class="list-item-MP">Clock stretching</li>
+                           </ul>
+                       </div>
+                       <!-- Aplikace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Aplikace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Komunikace s EEPROM pamětí</li>
+                               <li class="list-item-MP">Připojení senzorů teploty/vlhkosti</li>
+                               <li class="list-item-MP">Rozšiřující I/O expandéry</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. Pokročilá rozhraní -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. Pokročilá rozhraní</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- CAN bus -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">CAN bus</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Automobilová sběrnice pro robustní přenos</li>
+                               <li class="list-item-MP">Multi-master komunikace</li>
+                               <li class="list-item-MP">Detekce a korekce chyb</li>
+                           </ul>
+                       </div>
+                       <!-- USB -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">USB</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Univerzální sériové rozhraní</li>
+                               <li class="list-item-MP">Různé rychlostní třídy</li>
+                               <li class="list-item-MP">Plug-and-play funkcionalita</li>
+                           </ul>
+                       </div>
+                       <!-- Ethernet -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Ethernet</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Síťová komunikace MCU</li>
+                               <li class="list-item-MP">TCP/IP stack</li>
+                               <li class="list-item-MP">IoT aplikace</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 5. Bezdrátová rozhraní -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">5. Bezdrátová rozhraní</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- WiFi -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">WiFi</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Bezdrátové připojení k síti</li>
+                               <li class="list-item-MP">TCP/IP komunikace</li>
+                               <li class="list-item-MP">Cloud konektivita</li>
+                           </ul>
+                       </div>
+                       <!-- Bluetooth/BLE -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Bluetooth/BLE</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Nízkoenergetická bezdrátová komunikace</li>
+                               <li class="list-item-MP">Párování zařízení</li>
+                               <li class="list-item-MP">Mobilní aplikace</li>
+                           </ul>
+                       </div>
+                       <!-- RF moduly -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">RF moduly</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Proprietární rádiová komunikace</li>
+                               <li class="list-item-MP">Nízká spotřeba energie</li>
+                               <li class="list-item-MP">Mesh sítě</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

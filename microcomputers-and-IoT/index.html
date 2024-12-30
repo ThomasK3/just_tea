@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikropočítače - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-purple-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-purple-200">/</span>
+                <a href="../index.html" class="text-lg">Mikropočítače</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+            Mikropočítače a Hardware
+        </h1>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="card main-card">
+                <div class="card-header">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                        <h2 class="text-2xl font-semibold text-purple-800">Přehled témat</h2>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="grid gap-6">
+                        <!-- 1. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/mcu-basics.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>1. Mikrokontroléry (MCU) – základní pojmy</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Architektura MCU, procesorové jádro, paměťový subsystém a jejich základní principy.</p>
+                        </div>
+
+                        <!-- 2. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/external-peripherals.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>2. Připojování externích periferií k MCU</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Způsoby připojení externích zařízení, komunikační protokoly a rozhraní.</p>
+                        </div>
+
+                        <!-- 3. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/counter-systems.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>3. Čítačové podsystémy MCU</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Funkce a využití čítačů, časovačů a jejich programování.</p>
+                        </div>
+
+                        <!-- 4. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/iot.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>4. Internet věcí</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Základní principy IoT, připojení k internetu a využití v praxi.</p>
+                        </div>
+
+                        <!-- 5. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/interrupt-system.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>5. Přerušovací podsystém MCU</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Systém přerušení, obsluha přerušení a jejich priorita.</p>
+                        </div>
+
+                        <!-- 6. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/programming-languages.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>6. Vyšší programovací jazyky pro MCU</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Programování v C/C++, vývojová prostředí a debugging.</p>
+                        </div>
+
+                        <!-- 7. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/serial-interfaces.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>7. Sériová rozhraní MCU</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">UART, I2C, SPI a další sériová rozhraní pro komunikaci.</p>
+                        </div>
+
+                        <!-- 8. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/processors.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>8. Procesory</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Architektura procesorů, výkon, cache a instrukční sady.</p>
+                        </div>
+
+                        <!-- 9. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/motherboards.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>9. Základní desky</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Komponenty základních desek, čipsety a sběrnice.</p>
+                        </div>
+
+                        <!-- 10. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/memory.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>10. Paměti</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Typy pamětí, RAM, ROM a jejich charakteristiky.</p>
+                        </div>
+
+                        <!-- 11. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/storage.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>11. Zařízení pro ukládání dat</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">HDD, SSD, optická média a jejich vlastnosti.</p>
+                        </div>
+
+                        <!-- 12. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/graphics.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>12. Grafické karty</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">GPU architektura, paměti, rozhraní a výkon.</p>
+                        </div>
+
+                        <!-- 13. Téma -->
+                        <div class="topic-section">
+                            <h3 class="text-xl font-semibold text-purple-700 mb-3">
+                                <a href="chapters/output-devices.html" class="hover:text-purple-500 flex items-center gap-2">
+                                    <span>13. Výstupní zařízení PC</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Monitory, tiskárny a další výstupní periferie.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Mikropočítače a Hardware</p>
+        </div>
+    </footer>
+</body>
+</html>

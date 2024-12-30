@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Připojování externích periferií - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Připojování externích periferií k MCU
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. Digitální rozhraní -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. Digitální rozhraní</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- GPIO -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">GPIO (General Purpose I/O)</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Univerzální digitální vstupně-výstupní piny</li>
+                               <li class="list-item-MP">Programovatelná funkcionalita každého pinu</li>
+                               <li class="list-item-MP">Připojení LED, tlačítek, spínačů</li>
+                           </ul>
+                       </div>
+                       <!-- Pull-up/Pull-down rezistory -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Pull-up/Pull-down rezistory</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Definují klidovou úroveň signálu</li>
+                               <li class="list-item-MP">Zabraňují náhodným změnám stavu</li>
+                               <li class="list-item-MP">Připojení tlačítek k digitálním vstupům</li>
+                           </ul>
+                       </div>
+                       <!-- Ochranné prvky -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Ochranné prvky</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Omezení napětí a proudu pinů</li>
+                               <li class="list-item-MP">Ochrana proti ESD a přepětí</li>
+                               <li class="list-item-MP">Použití ochranných diod a rezistorů</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Sériová komunikace -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Sériová komunikace</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- UART/USART -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">UART/USART</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Asynchronní sériový přenos dat</li>
+                               <li class="list-item-MP">Dvouvodičové propojení (RX/TX)</li>
+                               <li class="list-item-MP">Komunikace s PC přes USB-UART</li>
+                           </ul>
+                       </div>
+                       <!-- SPI rozhraní -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">SPI rozhraní</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Synchronní sériové rozhraní</li>
+                               <li class="list-item-MP">Master-slave komunikace více zařízení</li>
+                               <li class="list-item-MP">Připojení displejů, paměti, senzorů</li>
+                           </ul>
+                       </div>
+                       <!-- I2C sběrnice -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">I2C sběrnice</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Dvouvodičová synchronní komunikace</li>
+                               <li class="list-item-MP">Adresovatelné připojení více zařízení</li>
+                               <li class="list-item-MP">Komunikace se senzory, EEPROM</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Analogové rozhraní -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Analogové rozhraní</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- ADC vstupy -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">ADC vstupy</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Převod analogového signálu na digitální</li>
+                               <li class="list-item-MP">Vzorkování vstupního napětí</li>
+                               <li class="list-item-MP">Měření hodnot ze senzorů</li>
+                           </ul>
+                       </div>
+                       <!-- DAC výstupy -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">DAC výstupy</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Převod digitálního signálu na analogový</li>
+                               <li class="list-item-MP">Generování napěťových úrovní</li>
+                               <li class="list-item-MP">Řízení analogových zařízení</li>
+                           </ul>
+                       </div>
+                       <!-- Analogové přizpůsobení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Analogové přizpůsobení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Úprava úrovní vstupních signálů</li>
+                               <li class="list-item-MP">Filtrace a zesílení signálu</li>
+                               <li class="list-item-MP">Použití operačních zesilovačů</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

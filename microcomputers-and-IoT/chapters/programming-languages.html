@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vyšší programovací jazyky pro MCU - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Vyšší programovací jazyky pro MCU
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. C/C++ pro MCU -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. C/C++ pro MCU</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Standardní C -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Standardní C</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Nejrozšířenější jazyk pro embedded systémy</li>
+                               <li class="list-item-MP">Přímý přístup k hardware</li>
+                               <li class="list-item-MP">Efektivní generování strojového kódu</li>
+                           </ul>
+                       </div>
+                       <!-- C++ features -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">C++ features</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Objektově orientované programování v MCU</li>
+                               <li class="list-item-MP">Šablony pro generické komponenty</li>
+                               <li class="list-item-MP">RTOS tasky jako objekty</li>
+                           </ul>
+                       </div>
+                       <!-- Optimalizace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Optimalizace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Minimalizace použité paměti</li>
+                               <li class="list-item-MP">Inline funkce pro kritický kód</li>
+                               <li class="list-item-MP">Optimalizace pro cílovou architekturu</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Vývojové nástroje -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Vývojové nástroje</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Kompilátory -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Kompilátory</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Překlad kódu pro specifický MCU</li>
+                               <li class="list-item-MP">GCC, LLVM, komerční překladače</li>
+                               <li class="list-item-MP">Optimalizace pro embedded systémy</li>
+                           </ul>
+                       </div>
+                       <!-- IDE -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">IDE</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Integrované vývojové prostředí</li>
+                               <li class="list-item-MP">Debugging a programování MCU</li>
+                               <li class="list-item-MP">Arduino IDE, STM32CubeIDE, MPLAB</li>
+                           </ul>
+                       </div>
+                       <!-- Debuggery -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Debuggery</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Hardware pro ladění programu</li>
+                               <li class="list-item-MP">JTAG/SWD rozhraní</li>
+                               <li class="list-item-MP">Krokování programu v MCU</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Framework a knihovny -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Framework a knihovny</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- HAL -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">HAL (Hardware Abstraction Layer)</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Abstrakce hardwarových periferií MCU</li>
+                               <li class="list-item-MP">Přenositelnost mezi různými MCU</li>
+                               <li class="list-item-MP">Standardizované API pro periferie</li>
+                           </ul>
+                       </div>
+                       <!-- RTOS knihovny -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">RTOS knihovny</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Real-time operační systém pro MCU</li>
+                               <li class="list-item-MP">FreeRTOS, µC/OS, Zephyr</li>
+                               <li class="list-item-MP">Multitasking v embedded systémech</li>
+                           </ul>
+                       </div>
+                       <!-- Arduino framework -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Arduino framework</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Zjednodušené API pro MCU</li>
+                               <li class="list-item-MP">Rychlý vývoj prototypů</li>
+                               <li class="list-item-MP">Široká podpora knihoven</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. Specifika MCU programování -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. Specifika MCU programování</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Práce s registry -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Práce s registry</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Přímé ovládání hardware MCU</li>
+                               <li class="list-item-MP">Bitové operace a masky</li>
+                               <li class="list-item-MP">Nastavení periferií přes registry</li>
+                           </ul>
+                       </div>
+                       <!-- Interrupt handling -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Interrupt handling</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Obsluha přerušení v C/C++</li>
+                               <li class="list-item-MP">Volatile proměnné</li>
+                               <li class="list-item-MP">Kritické sekce kódu</li>
+                           </ul>
+                       </div>
+                       <!-- Memory management -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Memory management</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Správa omezené paměti MCU</li>
+                               <li class="list-item-MP">Statická alokace paměti</li>
+                               <li class="list-item-MP">Optimalizace využití RAM/Flash</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

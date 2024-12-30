@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paměti - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-purple-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-purple-200">/</span>
+                <a href="../index.html" class="text-lg">Mikroprocesorová technika</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+            Paměti
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Základní rozdělení -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">1. Základní rozdělení</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Volatilní paměti</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Ztrácí obsah při odpojení napájení</li>
+                                <li class="list-item-MP">Operační paměť RAM</li>
+                                <li class="list-item-MP">Registry a cache CPU</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Nevolatilní paměti</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Uchovávají data bez napájení</li>
+                                <li class="list-item-MP">Flash, EEPROM, ROM</li>
+                                <li class="list-item-MP">Dlouhodobé uložení dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Cache paměti</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Rychlá vyrovnávací paměť</li>
+                                <li class="list-item-MP">Hierarchické uspořádání L1-L3</li>
+                                <li class="list-item-MP">Snížení přístupové doby</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RAM technologie -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">2. RAM technologie</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">DRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Dynamická paměť s refresh</li>
+                                <li class="list-item-MP">Vysoká hustota dat</li>
+                                <li class="list-item-MP">Hlavní operační paměť</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">SRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Statická paměť bez refresh</li>
+                                <li class="list-item-MP">Rychlejší než DRAM</li>
+                                <li class="list-item-MP">Použití v cache CPU</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">DDR SDRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Synchronní dynamická RAM</li>
+                                <li class="list-item-MP">Double Data Rate přenos</li>
+                                <li class="list-item-MP">Různé generace (DDR4/DDR5)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flash paměti -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">3. Flash paměti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NOR Flash</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Přímé vykonávání kódu</li>
+                                <li class="list-item-MP">Náhodný přístup</li>
+                                <li class="list-item-MP">Boot ROM aplikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NAND Flash</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Vysoká hustota dat</li>
+                                <li class="list-item-MP">Blokový přístup</li>
+                                <li class="list-item-MP">SSD disky, USB flash</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">eMMC/UFS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Embedded paměťové systémy</li>
+                                <li class="list-item-MP">Integrovaný řadič</li>
+                                <li class="list-item-MP">Mobilní zařízení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speciální paměti -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">4. Speciální paměti</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NVRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Nonvolatilní RAM</li>
+                                <li class="list-item-MP">Záloha konfigurace</li>
+                                <li class="list-item-MP">CMOS nastavení</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">MRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Magnetická RAM</li>
+                                <li class="list-item-MP">Neomezený počet zápisů</li>
+                                <li class="list-item-MP">Průmyslové aplikace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">ReRAM</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Resistive RAM</li>
+                                <li class="list-item-MP">Změna odporu materiálu</li>
+                                <li class="list-item-MP">Budoucí paměťová technologie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paměťové systémy -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">5. Paměťové systémy</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">ECC paměti</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Detekce a oprava chyb</li>
+                                <li class="list-item-MP">Serverové systémy</li>
+                                <li class="list-item-MP">Zvýšená spolehlivost</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Virtuální paměť</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Rozšíření RAM na disk</li>
+                                <li class="list-item-MP">Stránkování paměti</li>
+                                <li class="list-item-MP">Správa paměti OS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Paměťové řadiče</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Řízení přístupu k paměti</li>
+                                <li class="list-item-MP">Timing a refresh</li>
+                                <li class="list-item-MP">Integrované v CPU/chipset</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Mikroprocesorová technika</p>
+        </div>
+    </footer>
+</body>
+</html>

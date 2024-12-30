@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Základní desky - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Základní desky
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. Architektura základní desky -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. Architektura základní desky</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Chipset -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Chipset</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Řídící obvody základní desky</li>
+                               <li class="list-item-MP">Northbridge a Southbridge/PCH</li>
+                               <li class="list-item-MP">Propojení CPU s periferiemi</li>
+                           </ul>
+                       </div>
+                       <!-- Sběrnice -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Sběrnice</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Propojovací systémy na desce</li>
+                               <li class="list-item-MP">Hierarchie přenosových rychlostí</li>
+                               <li class="list-item-MP">PCIe, DMI, USB sběrnice</li>
+                           </ul>
+                       </div>
+                       <!-- Form factor -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Form factor</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Standardizované rozměry desek</li>
+                               <li class="list-item-MP">ATX, microATX, Mini-ITX</li>
+                               <li class="list-item-MP">Kompatibilita se skříněmi</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Konektory a rozhraní -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Konektory a rozhraní</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- CPU socket -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">CPU socket</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Patice pro procesor</li>
+                               <li class="list-item-MP">LGA nebo PGA provedení</li>
+                               <li class="list-item-MP">Specifické pro platformu</li>
+                           </ul>
+                       </div>
+                       <!-- RAM sloty -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">RAM sloty</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Konektory pro paměťové moduly</li>
+                               <li class="list-item-MP">DIMM/SO-DIMM formáty</li>
+                               <li class="list-item-MP">Dual/Quad channel architektura</li>
+                           </ul>
+                       </div>
+                       <!-- PCIe sloty -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">PCIe sloty</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Rozšiřující sloty pro karty</li>
+                               <li class="list-item-MP">Různé velikosti (x1/x4/x8/x16)</li>
+                               <li class="list-item-MP">Připojení GPU, síťových karet</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Subsystémy -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Subsystémy</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Napájecí systém -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Napájecí systém</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">VRM pro CPU napájení</li>
+                               <li class="list-item-MP">Fázové řízení napětí</li>
+                               <li class="list-item-MP">Ochranné obvody</li>
+                           </ul>
+                       </div>
+                       <!-- Storage rozhraní -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Storage rozhraní</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">SATA porty pro disky</li>
+                               <li class="list-item-MP">M.2 sloty pro NVMe</li>
+                               <li class="list-item-MP">RAID podpora</li>
+                           </ul>
+                       </div>
+                       <!-- Síťové prvky -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Síťové prvky</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Integrovaná síťová karta</li>
+                               <li class="list-item-MP">WiFi/Bluetooth moduly</li>
+                               <li class="list-item-MP">LAN konektory</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. Speciální funkce -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. Speciální funkce</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- BIOS/UEFI -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">BIOS/UEFI</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Firmware základní desky</li>
+                               <li class="list-item-MP">Konfigurace hardware</li>
+                               <li class="list-item-MP">Boot sekvence systému</li>
+                           </ul>
+                       </div>
+                       <!-- Monitoring systému -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Monitoring systému</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Senzory teploty a napětí</li>
+                               <li class="list-item-MP">Fan control</li>
+                               <li class="list-item-MP">Diagnostické LED</li>
+                           </ul>
+                       </div>
+                       <!-- Bezpečnostní prvky -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Bezpečnostní prvky</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">TPM modul</li>
+                               <li class="list-item-MP">Secure Boot</li>
+                               <li class="list-item-MP">Anti-tampering systémy</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 5. Rozšiřitelnost -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">5. Rozšiřitelnost</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Headers -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Headers</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Interní konektory pro periferie</li>
+                               <li class="list-item-MP">USB, audio, LED</li>
+                               <li class="list-item-MP">Fan konektory</li>
+                           </ul>
+                       </div>
+                       <!-- Debug funkce -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Debug funkce</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">POST kódy</li>
+                               <li class="list-item-MP">Debug LED</li>
+                               <li class="list-item-MP">BIOS flashback</li>
+                           </ul>
+                       </div>
+                       <!-- Overclocking podpora -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Overclocking podpora</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Nastavení taktů CPU/RAM</li>
+                               <li class="list-item-MP">Voltage control</li>
+                               <li class="list-item-MP">Teplotní limity</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

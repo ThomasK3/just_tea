@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Internet věcí (IoT) - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Internet věcí (IoT)
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. Základní koncepty -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. Základní koncepty</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- IoT Architektura -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">IoT Architektura</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Propojení fyzických zařízení s internetem</li>
+                               <li class="list-item-MP">Třívrstvý model (věc-síť-cloud)</li>
+                               <li class="list-item-MP">Sběr dat ze senzorů domácnosti</li>
+                           </ul>
+                       </div>
+                       <!-- Koncová zařízení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Koncová zařízení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Hardwarové jednotky s připojením</li>
+                               <li class="list-item-MP">Obsahují senzory a aktuátory</li>
+                               <li class="list-item-MP">Měření teploty, vlhkosti, spotřeby</li>
+                           </ul>
+                       </div>
+                       <!-- Edge Computing -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Edge Computing</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Zpracování dat blízko zdroje</li>
+                               <li class="list-item-MP">Redukce přenosu do cloudu</li>
+                               <li class="list-item-MP">Filtrace a agregace senzorových dat</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Komunikační protokoly -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Komunikační protokoly</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- MQTT -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">MQTT</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Lightweight messaging protokol</li>
+                               <li class="list-item-MP">Publish-subscribe komunikační model</li>
+                               <li class="list-item-MP">Přenos dat ze senzorů</li>
+                           </ul>
+                       </div>
+                       <!-- CoAP -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">CoAP</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">REST protokol pro omezená zařízení</li>
+                               <li class="list-item-MP">Optimalizovaný pro IoT aplikace</li>
+                               <li class="list-item-MP">Komunikace mezi IoT zařízeními</li>
+                           </ul>
+                       </div>
+                       <!-- HTTP/HTTPS -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">HTTP/HTTPS</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Standardní webový protokol</li>
+                               <li class="list-item-MP">REST API pro IoT služby</li>
+                               <li class="list-item-MP">Připojení do cloudových platforem</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Bezpečnost -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Bezpečnost</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Autentizace zařízení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Autentizace zařízení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Ověření identity IoT zařízení</li>
+                               <li class="list-item-MP">Použití certifikátů a tokenů</li>
+                               <li class="list-item-MP">Zabezpečení přístupu do sítě</li>
+                           </ul>
+                       </div>
+                       <!-- Šifrování dat -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Šifrování dat</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Ochrana přenášených dat</li>
+                               <li class="list-item-MP">Použití TLS/SSL protokolů</li>
+                               <li class="list-item-MP">Zabezpečení citlivých informací</li>
+                           </ul>
+                       </div>
+                       <!-- Aktualizace firmware -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Aktualizace firmware</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Vzdálená aktualizace zařízení</li>
+                               <li class="list-item-MP">Oprava bezpečnostních chyb</li>
+                               <li class="list-item-MP">Over-the-air (OTA) aktualizace</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. IoT Platformy -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. IoT Platformy</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Cloud služby -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Cloud služby</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Centralizovaná správa IoT zařízení</li>
+                               <li class="list-item-MP">Škálovatelné úložiště dat</li>
+                               <li class="list-item-MP">AWS IoT, Azure IoT Hub</li>
+                           </ul>
+                       </div>
+                       <!-- Vizualizace dat -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Vizualizace dat</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Dashboardy pro monitoring zařízení</li>
+                               <li class="list-item-MP">Grafické zobrazení měřených hodnot</li>
+                               <li class="list-item-MP">Grafana, Thingsboard, Kibana</li>
+                           </ul>
+                       </div>
+                       <!-- Automatizace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Automatizace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Pravidla pro zpracování událostí</li>
+                               <li class="list-item-MP">Reakce na měřené hodnoty</li>
+                               <li class="list-item-MP">Automatické řízení domácnosti</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

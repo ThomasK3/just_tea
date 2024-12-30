@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zařízení pro ukládání dat - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-purple-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-purple-200">/</span>
+                <a href="../index.html" class="text-lg">Mikroprocesorová technika</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+            Zařízení pro ukládání dat
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Magnetické disky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">1. Magnetické disky (HDD)</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Princip záznamu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Magnetický záznam na plotny</li>
+                                <li class="list-item-MP">Mechanické čtení/zápis hlavičkami</li>
+                                <li class="list-item-MP">Vysoká kapacita/nízká cena</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Organizace dat</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Sektory a cylindry</li>
+                                <li class="list-item-MP">MBR/GPT rozdělení</li>
+                                <li class="list-item-MP">Filesystém pro správu dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Rozhraní</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">SATA/SAS připojení</li>
+                                <li class="list-item-MP">Transfer rate specifikace</li>
+                                <li class="list-item-MP">SMART monitoring stavu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SSD disky -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">2. SSD disky</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NAND technologie</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Flash paměťové buňky</li>
+                                <li class="list-item-MP">Elektrické čtení/zápis</li>
+                                <li class="list-item-MP">Omezený počet P/E cyklů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Řadič</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Wear leveling algoritmy</li>
+                                <li class="list-item-MP">Garbage collection</li>
+                                <li class="list-item-MP">TRIM podpora</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NVMe protokol</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">PCIe připojení</li>
+                                <li class="list-item-MP">Vysoká propustnost</li>
+                                <li class="list-item-MP">Nízká latence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optická média -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">3. Optická média</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">CD/DVD/Blu-ray</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Optický záznam dat</li>
+                                <li class="list-item-MP">Různé kapacity médií</li>
+                                <li class="list-item-MP">Read-only/recordable varianty</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Formáty záznamu</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">ISO9660/UDF filesystem</li>
+                                <li class="list-item-MP">Multisession zápis</li>
+                                <li class="list-item-MP">Ochrana proti kopírování</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Mechaniky</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Optické čtecí hlavy</li>
+                                <li class="list-item-MP">Různé rychlosti zápisu</li>
+                                <li class="list-item-MP">Buffer under-run ochrana</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flash úložiště -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">4. Flash úložiště</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">USB Flash</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Přenosné flash úložiště</li>
+                                <li class="list-item-MP">Mass storage protokol</li>
+                                <li class="list-item-MP">FAT/exFAT filesystem</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">eMMC/UFS</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Embedded flash storage</li>
+                                <li class="list-item-MP">Mobilní zařízení</li>
+                                <li class="list-item-MP">Integrovaný řadič</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">SD karty</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Přenosná flash média</li>
+                                <li class="list-item-MP">Rychlostní třídy</li>
+                                <li class="list-item-MP">Fotografické/mobilní využití</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síťová úložiště -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">5. Síťová úložiště</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">NAS systémy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Network Attached Storage</li>
+                                <li class="list-item-MP">RAID pole disků</li>
+                                <li class="list-item-MP">Sdílení v síti</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Cloud storage</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Vzdálené úložiště dat</li>
+                                <li class="list-item-MP">Škálovatelná kapacita</li>
+                                <li class="list-item-MP">Synchronizace dat</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">SAN systémy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Storage Area Network</li>
+                                <li class="list-item-MP">Fibre Channel/iSCSI</li>
+                                <li class="list-item-MP">Enterprise řešení</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Mikroprocesorová technika</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafické karty - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-purple-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-purple-200">/</span>
+                <a href="../index.html" class="text-lg">Mikroprocesorová technika</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+            Grafické karty
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- GPU architektura -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">1. GPU architektura</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Stream procesory</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Paralelní výpočetní jednotky</li>
+                                <li class="list-item-MP">SIMD architektura</li>
+                                <li class="list-item-MP">Shader výpočty</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Paměťový subsystém</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">GDDR/HBM paměti</li>
+                                <li class="list-item-MP">Vysoká propustnost dat</li>
+                                <li class="list-item-MP">Video buffer management</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Render pipeline</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Zpracování grafických primitiv</li>
+                                <li class="list-item-MP">Pixel/vertex shadery</li>
+                                <li class="list-item-MP">Rasterizace obrazu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware komponenty -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">2. Hardware komponenty</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">GPU čip</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Grafický procesor</li>
+                                <li class="list-item-MP">Výpočetní jádra</li>
+                                <li class="list-item-MP">Řídící jednotky</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Video paměť</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Dedikovaná grafická RAM</li>
+                                <li class="list-item-MP">Frame buffer</li>
+                                <li class="list-item-MP">Texture cache</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Display výstupy</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">HDMI/DisplayPort/USB-C</li>
+                                <li class="list-item-MP">Multi-monitor podpora</li>
+                                <li class="list-item-MP">Display stream compression</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Výpočetní funkce -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">3. Výpočetní funkce</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">GPGPU</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">General-purpose computing</li>
+                                <li class="list-item-MP">CUDA/OpenCL</li>
+                                <li class="list-item-MP">Paralelní akcelerace výpočtů</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">AI akcelerace</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Tensor cores</li>
+                                <li class="list-item-MP">Machine learning</li>
+                                <li class="list-item-MP">Neural network inference</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Video kodéry/dekodéry</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Hardware enkódování videa</li>
+                                <li class="list-item-MP">NVENC/AMD VCE</li>
+                                <li class="list-item-MP">Streamování obsahu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grafické technologie -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">4. Grafické technologie</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Ray tracing</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Realistické osvětlení scény</li>
+                                <li class="list-item-MP">RT cores</li>
+                                <li class="list-item-MP">Real-time rendering</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">DLSS/FSR</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">AI upscaling obrazu</li>
+                                <li class="list-item-MP">Zvýšení výkonu</li>
+                                <li class="list-item-MP">Kvalita vs. performance</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Variable Rate Shading</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Adaptivní kvalita renderingu</li>
+                                <li class="list-item-MP">Optimalizace výkonu</li>
+                                <li class="list-item-MP">Úspora výpočetního výkonu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software a ovladače -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-purple-700">5. Software a ovladače</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Display driver</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Ovladače grafické karty</li>
+                                <li class="list-item-MP">Hardware abstrakce</li>
+                                <li class="list-item-MP">Performance optimalizace</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">API podpora</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">DirectX/Vulkan/OpenGL</li>
+                                <li class="list-item-MP">Shader model</li>
+                                <li class="list-item-MP">Feature level support</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-purple-600 mb-3">Utility software</h3>
+                            <ul class="space-y-2">
+                                <li class="list-item-MP">Monitoring a správa</li>
+                                <li class="list-item-MP">Overclocking nástroje</li>
+                                <li class="list-item-MP">Streamovací funkce</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Mikroprocesorová technika</p>
+        </div>
+    </footer>
+</body>
+</html>

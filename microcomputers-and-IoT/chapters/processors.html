@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Procesory - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Procesory
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. Architektura procesorů -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. Architektura procesorů</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Von Neumannova architektura -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Von Neumannova architektura</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Společná paměť pro program/data</li>
+                               <li class="list-item-MP">Sekvenční zpracování instrukcí</li>
+                               <li class="list-item-MP">Základní model většiny CPU</li>
+                           </ul>
+                       </div>
+                       <!-- Harvardská architektura -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Harvardská architektura</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Oddělená paměť program/data</li>
+                               <li class="list-item-MP">Paralelní přístup k instrukcím/datům</li>
+                               <li class="list-item-MP">Typická pro mikrokontroléry</li>
+                           </ul>
+                       </div>
+                       <!-- RISC vs CISC -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">RISC vs CISC</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Rozdílná filozofie instrukční sady</li>
+                               <li class="list-item-MP">RISC má jednodušší instrukce</li>
+                               <li class="list-item-MP">CISC má komplexnější instrukce</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Komponenty CPU -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Komponenty CPU</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- ALU -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">ALU (Aritmeticko-logická jednotka)</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Provádí matematické a logické operace</li>
+                               <li class="list-item-MP">Zpracování celých čísel</li>
+                               <li class="list-item-MP">Základní výpočetní jednotka procesoru</li>
+                           </ul>
+                       </div>
+                       <!-- Řadič -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Řadič</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Řídí tok instrukcí procesoru</li>
+                               <li class="list-item-MP">Dekóduje instrukce</li>
+                               <li class="list-item-MP">Koordinuje činnost komponent</li>
+                           </ul>
+                       </div>
+                       <!-- Registry -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Registry</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Rychlá pracovní paměť CPU</li>
+                               <li class="list-item-MP">Ukládání mezivýsledků</li>
+                               <li class="list-item-MP">Řízení stavu procesoru</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Výkonnostní prvky -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Výkonnostní prvky</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Pipeline -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Pipeline</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Zřetězené zpracování instrukcí</li>
+                               <li class="list-item-MP">Paralelní vykonávání různých fází</li>
+                               <li class="list-item-MP">Zvýšení výkonu procesoru</li>
+                           </ul>
+                       </div>
+                       <!-- Cache paměť -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Cache paměť</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Rychlá vyrovnávací paměť</li>
+                               <li class="list-item-MP">Hierarchické uspořádání (L1/L2/L3)</li>
+                               <li class="list-item-MP">Snížení latence přístupu</li>
+                           </ul>
+                       </div>
+                       <!-- Branch prediction -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Branch prediction</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Predikce větvení programu</li>
+                               <li class="list-item-MP">Spekulativní vykonávání instrukcí</li>
+                               <li class="list-item-MP">Optimalizace pipeline</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. Moderní technologie -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. Moderní technologie</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Multithreading -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Multithreading</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Současné zpracování více vláken</li>
+                               <li class="list-item-MP">Efektivní využití pipeline</li>
+                               <li class="list-item-MP">Zvýšení propustnosti CPU</li>
+                           </ul>
+                       </div>
+                       <!-- Multicore -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Multicore</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Více výpočetních jader</li>
+                               <li class="list-item-MP">Paralelní zpracování úloh</li>
+                               <li class="list-item-MP">Škálování výkonu</li>
+                           </ul>
+                       </div>
+                       <!-- Virtualizace -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Virtualizace</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Hardwarová podpora virtualizace</li>
+                               <li class="list-item-MP">Izolace virtuálních strojů</li>
+                               <li class="list-item-MP">Efektivní přepínání kontextů</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>

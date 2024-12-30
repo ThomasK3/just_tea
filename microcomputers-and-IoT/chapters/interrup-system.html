@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Přerušovací podsystém MCU - Maturitní příprava</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+   <!-- Navigace -->
+   <nav class="bg-purple-800 text-white p-4">
+       <div class="container mx-auto flex justify-between items-center">
+           <div class="flex items-center gap-4">
+               <a href="../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+               <span class="text-purple-200">/</span>
+               <a href="../index.html" class="text-lg">Mikropočítače</a>
+           </div>
+       </div>
+   </nav>
+
+   <div class="container mx-auto px-4 py-8">
+       <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">
+           Přerušovací podsystém MCU
+       </h1>
+
+       <div class="max-w-6xl mx-auto space-y-6">
+           <!-- 1. Základní koncept -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">1. Základní koncept</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Asynchronní reakce na hardwarovou událost</li>
+                               <li class="list-item-MP">Pozastavení hlavního programového toku</li>
+                               <li class="list-item-MP">Obsluha externích signálů nebo časovače</li>
+                           </ul>
+                       </div>
+                       <!-- Vektor přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Vektor přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Tabulka adres obslužných rutin</li>
+                               <li class="list-item-MP">Definuje reakce na různá přerušení</li>
+                               <li class="list-item-MP">Skok na správnou obslužnou rutinu</li>
+                           </ul>
+                       </div>
+                       <!-- Priorita přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Priorita přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Hierarchie důležitosti jednotlivých přerušení</li>
+                               <li class="list-item-MP">Určuje pořadí obsluhy současných přerušení</li>
+                               <li class="list-item-MP">Kritická přerušení mají vyšší prioritu</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 2. Zdroje přerušení -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">2. Zdroje přerušení</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Externí přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Externí přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Reakce na změny vstupních pinů</li>
+                               <li class="list-item-MP">Detekce náběžné/sestupné hrany signálu</li>
+                               <li class="list-item-MP">Obsluha tlačítek nebo senzorů</li>
+                           </ul>
+                       </div>
+                       <!-- Časovačová přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Časovačová přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Periodické vyvolání přerušení časovačem</li>
+                               <li class="list-item-MP">Pravidelná obsluha systémových úloh</li>
+                               <li class="list-item-MP">Generování PWM nebo časových značek</li>
+                           </ul>
+                       </div>
+                       <!-- Periferní přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Periferní přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Signalizace událostí od periferií</li>
+                               <li class="list-item-MP">Dokončení A/D převodu nebo komunikace</li>
+                               <li class="list-item-MP">Obsluha UART nebo SPI přenosu</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 3. Implementace -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">3. Implementace</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- ISR -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">ISR (Interrupt Service Routine)</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Obslužná rutina přerušení</li>
+                               <li class="list-item-MP">Krátký a rychlý kód</li>
+                               <li class="list-item-MP">Zpracování události a návrat</li>
+                           </ul>
+                       </div>
+                       <!-- Kontext přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Kontext přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Uložení stavu procesoru</li>
+                               <li class="list-item-MP">Zachování registrů a návratové adresy</li>
+                               <li class="list-item-MP">Obnovení kontextu po obsluze</li>
+                           </ul>
+                       </div>
+                       <!-- Maskování přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Maskování přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Dočasné zakázání vybraných přerušení</li>
+                               <li class="list-item-MP">Ochrana kritických sekcí kódu</li>
+                               <li class="list-item-MP">Řízení přístupu ke sdíleným zdrojům</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- 4. Správa přerušení -->
+           <div class="card">
+               <div class="card-header bg-gray-100">
+                   <h2 class="text-xl font-semibold text-purple-700">4. Správa přerušení</h2>
+               </div>
+               <div class="p-6">
+                   <div class="grid md:grid-cols-3 gap-6">
+                       <!-- Registrace handleru -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Registrace handleru</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Nastavení obslužné rutiny přerušení</li>
+                               <li class="list-item-MP">Konfigurace parametrů přerušení</li>
+                               <li class="list-item-MP">Propojení hardware s obsluhou</li>
+                           </ul>
+                       </div>
+                       <!-- Latence přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Latence přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Doba reakce na přerušení</li>
+                               <li class="list-item-MP">Minimalizace zpoždění obsluhy</li>
+                               <li class="list-item-MP">Kritické pro real-time systémy</li>
+                           </ul>
+                       </div>
+                       <!-- Vnořená přerušení -->
+                       <div>
+                           <h3 class="font-medium text-purple-600 mb-3">Vnořená přerušení</h3>
+                           <ul class="space-y-2">
+                               <li class="list-item-MP">Obsluha přerušení během jiného přerušení</li>
+                               <li class="list-item-MP">Využití prioritního systému</li>
+                               <li class="list-item-MP">Správa více současných událostí</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-purple-800 text-white py-4 mt-8">
+       <div class="container mx-auto text-center">
+           <p>&copy; 2024 Maturitní příprava - Mikropočítače</p>
+       </div>
+   </footer>
+</body>
+</html>
