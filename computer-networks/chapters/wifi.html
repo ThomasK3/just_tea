@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi sítě - Maturitní příprava</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigace -->
+    <nav class="bg-red-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="../../../index.html" class="text-xl font-bold">Maturitní témata IT</a>
+                <span class="text-red-200">/</span>
+                <a href="../../index.html" class="text-lg">Počítačové sítě</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-red-800 mb-8 text-center">
+            WiFi sítě
+        </h1>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+            <!-- Fyzická vrstva -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">1. Fyzická vrstva</h2>
+                </div>
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">Přenosové technologie</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Základní metody přenosu radiových signálů</li>
+                            <li class="list-item-PC">Využívá různé modulační techniky</li>
+                            <li class="list-item-PC">Implementováno v WiFi čipech</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">DSSS/FHSS</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Techniky rozprostření spektra signálu</li>
+                            <li class="list-item-PC">Odolnost proti rušení a odposlechu</li>
+                            <li class="list-item-PC">Používá se ve standardu 802.11b</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-red-600 mb-3">OFDM</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Ortogonální frekvenční multiplexování signálu</li>
+                            <li class="list-item-PC">Vysoká spektrální účinnost přenosu</li>
+                            <li class="list-item-PC">Základ moderních WiFi standardů</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standardy 802.11 -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">2. Standardy 802.11</h2>
+                </div>
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">802.11a/b/g</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">První generace WiFi standardů</li>
+                            <li class="list-item-PC">Maximální rychlost 54 Mbps</li>
+                            <li class="list-item-PC">Použití v pásmu 2.4/5 GHz</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">802.11n</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Představil technologii MIMO</li>
+                            <li class="list-item-PC">Rychlost až 600 Mbps</li>
+                            <li class="list-item-PC">Současné vysílání více datových toků</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-red-600 mb-3">802.11ac/ax</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Nejnovější generace WiFi standardů</li>
+                            <li class="list-item-PC">Využívá MU-MIMO a OFDMA</li>
+                            <li class="list-item-PC">Rychlosti v řádu gigabitů</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síťové architektury -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">3. Síťové architektury</h2>
+                </div>
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">Ad-hoc sítě</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Přímé propojení zařízení</li>
+                            <li class="list-item-PC">Bez centrálního přístupového bodu</li>
+                            <li class="list-item-PC">Využití pro peer-to-peer komunikaci</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-red-600 mb-3">Infrastrukturní sítě</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Centralizovaná architektura s AP</li>
+                            <li class="list-item-PC">Základní stavební blok BSS</li>
+                            <li class="list-item-PC">Rozšíření pomocí ESSID pro roaming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bezpečnost -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">4. Bezpečnost</h2>
+                </div>
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">WEP/WPA</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">První generace zabezpečení WiFi</li>
+                            <li class="list-item-PC">Slabá kryptografická ochrana</li>
+                            <li class="list-item-PC">Nahrazeno modernějšími standardy WPA2/3</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">WPA3</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Nejnovější bezpečnostní standard</li>
+                            <li class="list-item-PC">Využívá silnou autentizaci SAE</li>
+                            <li class="list-item-PC">Ochrana proti útokům hrubou silou</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-red-600 mb-3">802.1X/RADIUS</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Framework pro autentizaci zařízení</li>
+                            <li class="list-item-PC">Využívá centrální autentizační server</li>
+                            <li class="list-item-PC">Podniková implementace zabezpečení WiFi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokročilé technologie -->
+            <div class="card">
+                <div class="card-header bg-gray-100">
+                    <h2 class="text-xl font-semibold text-red-700">5. Pokročilé technologie</h2>
+                </div>
+                <div class="p-6">
+                    <div class="mb-6">
+                        <h3 class="font-medium text-red-600 mb-3">Beamforming</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Směrové vysílání signálu</li>
+                            <li class="list-item-PC">Zvyšuje dosah a propustnost</li>
+                            <li class="list-item-PC">Adaptivní formování vyzařovacího diagramu</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-red-600 mb-3">MU-MIMO</h3>
+                        <ul class="space-y-2">
+                            <li class="list-item-PC">Víceuživatelské MIMO vysílání</li>
+                            <li class="list-item-PC">Současná komunikace s více klienty</li>
+                            <li class="list-item-PC">Zvyšuje celkovou kapacitu sítě</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Maturitní příprava - Počítačové sítě</p>
+        </div>
+    </footer>
+</body>
+</html>
